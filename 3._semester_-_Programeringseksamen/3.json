@@ -967,6 +967,954 @@
             "tags": [
                 "tråde"
             ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "I forbindelse med tråde, hvor bliver trådens variabler gemt?", 
+                "Trådens variabler bliver gemt i thread stacken, så hver tråd har sin egen kopi af en lokal variabel."
+            ], 
+            "flags": 0, 
+            "guid": "s=V?Jjxl<I", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Har tråde adgang til hinandens variabler?", 
+                "Nej, tråde har ikke adgang til hinandens variabler, men alle tråde har adgang til heapen(heapen er der, hvor java gemmer objekterne)."
+            ], 
+            "flags": 0, 
+            "guid": "Q*%FTU[*m*", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvor bliver et objekts instance variabler allokeret hent til?", 
+                "Et objekts instance variabler bliver allokeret til heapen."
+            ], 
+            "flags": 0, 
+            "guid": "cCwT}K*0P~", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvis der er 2 tråde, hvad sker der så når den ene tråd ændrer instance variablen?", 
+                "Da begge tråde deler heapen vil den anden tråd, se den ændrede variable næste gang den kører. I dette tilfælde deler trådene variablen, der er på heapen."
+            ], 
+            "flags": 0, 
+            "guid": "zQFwTKgvc[", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at lave 2 instances på det samme objekt for at undgå interferiance?", 
+                "Ja, det er muligt, men det er ikke en god løsning da en kunde f.eks. kun kan have en bankkonto. Brug syncronization i stedet."
+            ], 
+            "flags": 0, 
+            "guid": "c]?#,,shWl", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er interferiance i forbindelse med tråde? Giv et eksempel.", 
+                "Interferiance er når 2 tråde påvirker samme variable i heapen så resultatet bliver forkert.<div><br /></div><div>Vi har 2 tråde A og B. De har adgang til det samme objekt.</div><div><br /></div><div>A incrementer og B decrementer.</div><div><br /></div><div>For hver operation er der 3 skridt:</div><div>1. Læs C fra memory.</div><div>2. Increment eller decrement.</div><div>3. Skriv C tilbage til memory.</div><div><br /></div><div>Når A og B prøver at incremente og decrement på samme tid, vil den ene læse C fra skridt 1, mens den anden vil læse C fra skridt 2.</div><div><br /></div><div>Hvis værdien af C er 5 så vil A incremente så C er 6. Så vil B læse og decremente C til 4.</div><div><br /></div><div>Det sker da B udfører forgående skridt før A har nået at skrive C tilbage til memory.&nbsp;</div><div><br /></div><div>Da den ene tråd overlapper den anden vil trådens ændring ikke være synlig for den anden tråd. Det betyder at resultatet enten er 4 eller 6.&nbsp;</div><div><br /></div><div>Selv om det forventet resultat var 5.</div><div><br /></div><div>Dette kan undgås med syncronization.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "c3!VSKM<iZ", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan interferiance mellem tråde undgås?", 
+                "Ja, med syncronization."
+            ], 
+            "flags": 0, 
+            "guid": "Ng_AH=1:&G", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad bliver interferiance mellem tråde også kaldt?", 
+                "Interferiance mellem tråde bliver også kaldt raicing eller race condition."
+            ], 
+            "flags": 0, 
+            "guid": "h>;G`T]kU+", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kan synkroniseres ifm tråde?", 
+                "Metoder og statements kan synkroniseres."
+            ], 
+            "flags": 0, 
+            "guid": "tWNc~lpRZa", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er syncronization/synkronisering?", 
+                "Synkronisering er når flere tråde har adgang til en instance af en variable i heapen, så bruges synkronisering for at undgå race condition(interferiance)."
+            ], 
+            "flags": 0, 
+            "guid": "Gc[MRW|e,>", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør method syncronisation?", 
+                "Method syncronization gør, at kun en tråd kan udføre/execute den metode ad gangen. Kører hele metoden med den pågældende tråd."
+            ], 
+            "flags": 0, 
+            "guid": "hw.)Sg2D/6", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvor mange dele af koden skal synkroniseres for at undgå interferiance?", 
+                "Alle dele af koden skal synkroniseres for at undgå interferiance."
+            ], 
+            "flags": 0, 
+            "guid": "Nood7992]M", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan konstruktøren synkroniseres?", 
+                "Nej, konstruktøren kan ikke synkroniseres, men alle metoder og statements kan."
+            ], 
+            "flags": 0, 
+            "guid": "Q^eZlhpx_g", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør statement syncronization?", 
+                "Statement syncronization synkroniser en blok af statements."
+            ], 
+            "flags": 0, 
+            "guid": "K%RC7v<!eP", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan virker statement syncronization?", 
+                "Alle objekter har en entrenzig lock også kaldet en monitor.<div><br /></div><div>For at det skal virke skal trådene konkurrer om det samme objekt i heapen, da kun en tråd kan holde låsen ad gangen.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "J-1^[ei9ty", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad skal en tråd have før den kan udfører statement syncronization?", 
+                "For at en tråd kan udfører statement syncronization, skal tråden have objektets lås."
+            ], 
+            "flags": 0, 
+            "guid": "OtCXf&zM7`", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "I forbindelse med statement syncronisation, hvor mange tråde kan holde et objekts lås?", 
+                "Kun en tråd ad gangen kan holde et objekts lås."
+            ], 
+            "flags": 0, 
+            "guid": "Re+HPbODV0", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan statement syncronisation også bruges i forbindelse med lokale variabler?", 
+                "Nej, statement syncronisation kan ikke bruges i forbindelse med lokale variabler, med undtagelse af strings pga string pools(og string er et objekt)."
+            ], 
+            "flags": 0, 
+            "guid": "KI):8.@o<m", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan statement syncronisation også synkroniser static metoder og bruge static objekter?", 
+                "Ja, static metoder kan synkroniseres og det er muligt at bruge static objekter ifm statement syncronisation."
+            ], 
+            "flags": 0, 
+            "guid": "mHqQB<k{dC", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er en critical section(tråd spørgsmål)?", 
+                "Critical section er kode, som deler den samme ressource. Kun en tråd skal kunne udfører en critical section."
+            ], 
+            "flags": 0, 
+            "guid": "sf%f9LKj/=", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad betyder thread safe?", 
+                "Når en klasse eller metode er thread safe betyder det at en udvikler har synkroniseret alle de kritiske sektioner."
+            ], 
+            "flags": 0, 
+            "guid": "HM;N}c1|q/", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvor meget kode skal man synkroniser?", 
+                "Man skal kun synkroniser den kode som SKAL synkroniseres, så man ikke bloker for andre tråde dvs hold det til et minimum."
+            ], 
+            "flags": 0, 
+            "guid": "LK9d(yr[9d", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan en tråd blive suspenderet?", 
+                "Ja, en tråd kan blive suspenderet når der udføres en enkel linje kode."
+            ], 
+            "flags": 0, 
+            "guid": "v|Y/=QGkl?", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er deadlocks?", 
+                "Deadlocks sker når 2 eller flere tråde skaber en situation, hvor de bloker for hinanden. Trådene venter på hinanden, og bliver aldrig færdige. En tråd slipper ikke den lås den holder, før den tager den anden."
+            ], 
+            "flags": 0, 
+            "guid": "Ptecy#w^24", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er starvation?", 
+                "Starvation er når en tråd aldrig kommer til f.eks. pga lav prioritet."
+            ], 
+            "flags": 0, 
+            "guid": "ftBv$4m-}}", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er racing condition?", 
+                "Når der læses og skrives på delt data samtidig."
+            ], 
+            "flags": 0, 
+            "guid": "ojuO~]*flI", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan løses racing condition?", 
+                "Racing condition løses med synkronisering og volatile. Husk at der skal laåses på det samme objekt."
+            ], 
+            "flags": 0, 
+            "guid": "E4208mk=ot", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilke 4ting skal man undgå for at få racing condition?", 
+                "1. Holder flere låse samtidig.<div>2. Deler resourcer.</div><div>3. Cykliske låsereferance.</div><div>4. Programmet kan ikke selv løse deadlock.</div><div><br /></div><div>(De 3 første er de vigtigste).</div>"
+            ], 
+            "flags": 0, 
+            "guid": "K&V$?Jb$Sj", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør en lås(lock)?", 
+                "En lås forhindrer andre tråde i at tage objektet."
+            ], 
+            "flags": 0, 
+            "guid": "re5^lQQ(Xj", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at ændre variablerne i et objekt, der er låst?", 
+                "Ja, man kan godt ændre variablerne i et objekt, der er låst."
+            ], 
+            "flags": 0, 
+            "guid": "uiPkm2nL/W", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kan vi låse på?", 
+                "Det er muligt at låse på metoder, kode blokke, objekter(this) og klassen static."
+            ], 
+            "flags": 0, 
+            "guid": "qFfuv;DZk:", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Respekter alle code/tråde/funktioner/blokke låse?", 
+                "Nej, det er op til udvikleren at holde styr på låse. Brug evt. final."
+            ], 
+            "flags": 0, 
+            "guid": "FG/3tV-B)3", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan tråde låses flere gange på samme objekt?", 
+                "Ja, tråde kan godt låse flere gange på samme objekt."
+            ], 
+            "flags": 0, 
+            "guid": "B5X#Ho5GjD", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er fordelen ved manuelt at arbejde med låse?", 
+                "Manuelt arbejde med låse er mere fleksibelt, men sværere, så derfor brug syncronized."
+            ], 
+            "flags": 0, 
+            "guid": "hgw}}%hNo/", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er atomic?", 
+                "Atomic er når noget enten er gjort eller ikke gjort. Ikke havlvejs."
+            ], 
+            "flags": 0, 
+            "guid": "DPOIRnw]gt", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad vil være godt at gøre atomiske?", 
+                "Det vil være godt at gøre tråde atomiske."
+            ], 
+            "flags": 0, 
+            "guid": "zvHO}roS*L", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er integer increment atomisk?", 
+                "Nej, da den gemmer lokal variable på en tråd."
+            ], 
+            "flags": 0, 
+            "guid": "gbBjj{5ohc", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilke 3 ting er altid atomiske?", 
+                "1. Læse/skrive af pointer(referance til objektet).<div>2. Læse/skrive af primitive typer som int, float, double.</div><div>3. Læse/skrive af primitive typer som volatile.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "B*wm1]`!rq", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er busy waiting?", 
+                "Det er når tråden venter aktivt.&nbsp;"
+            ], 
+            "flags": 0, 
+            "guid": "B<N`Ik*UR0", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er problemet med busy waiting?", 
+                "Når tråden venter aktivt, optager den tråden."
+            ], 
+            "flags": 0, 
+            "guid": "I7[,T@D-UJ", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kan vi gøre for at undgå busy waiting?", 
+                "Vi kan swappe processen ud med f.eks. sleep, lock, eller wait så den laver noget andet i vente tiden."
+            ], 
+            "flags": 0, 
+            "guid": "BSG$+y9?,(", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilke 4 queues har vi arbejdet med fra blockingQueue interfacet?", 
+                "1. ArrayBlockingQueue.<div>2. LinkedBlockingQueue.</div><div>3. DelayBlockingQueue.</div><div>4. SynchronousQueue.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "F%=y@G8{)s", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er en kø(queue)?", 
+                "En kø er en buffer mellem consumer og producer."
+            ], 
+            "flags": 0, 
+            "guid": "JHx3k80{_p", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kendetegner blockingQueue interfacet i forbindelse med tråde?", 
+                "BlockingQueue er thread safe at putte ind i og tage ud fra."
+            ], 
+            "flags": 0, 
+            "guid": "HIq6=qYfHW", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kendetegner ArrayBlockingQueue?", 
+                "ArrayBlockingQueue har en fixed størrelse."
+            ], 
+            "flags": 0, 
+            "guid": "bIE{TW[XtP", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kendetegner LinkedBlockingQueue?", 
+                "LinkedBlockingQueue har ikke en fixed størrelse."
+            ], 
+            "flags": 0, 
+            "guid": "g(cO}wQGt6", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kendetegner DelayBlockingQueue?", 
+                "DelayBlockingQueue har en timeout(hvor længe vil jeg vente?)."
+            ], 
+            "flags": 0, 
+            "guid": "gdk{j{MWV$", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kendetegner synchronousQueue?", 
+                "????"
+            ], 
+            "flags": 0, 
+            "guid": "KXr(~XEB72", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er consumer-producer patteren?", 
+                "Med consumer-producer patteren deler man kun køen. Det gør at man undgår deadlock."
+            ], 
+            "flags": 0, 
+            "guid": "DqJ-rZ-Q)[", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er the consumer-producer problem(bound buffer problem)?", 
+                "- Køen er en fast størrelse.<div>- Køen er fyldt og produceren vil sætte mere ind. Hvad sker der?</div><div>- Køen er tom og consumeren vil tage mere ud. Hvad sker der?</div><div>- Løsning: inserting, removing og getting har hver 4 metoder, hvor de kan løse det f.eks. vente eller returner null.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "EeqRf-]Ijj", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvornår er producer-consumer pattern mest effektivt?", 
+                "Når opgaverne ikke er afhængige af hinanden er producer-consumer mest effektivt."
+            ], 
+            "flags": 0, 
+            "guid": "I{oX:kR13t", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er atomicInteger thread safe?", 
+                "Ja, atomicInteger er thread safe. Der findes flere. Det er et lokalt bibliotek i concurrent."
+            ], 
+            "flags": 0, 
+            "guid": "O3zixJZb3F", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er immutability?", 
+                "????"
+            ], 
+            "flags": 0, 
+            "guid": "P+X]T8BF#:", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kendetegner runnable interface?", 
+                "- Har en abstrakt metode run.<div>- Tager ingen argumenter og returner void.</div><div>- Implements Runnable</div><div>Runnable r = () --&gt;</div><div>&nbsp; &nbsp;sout\"hej\";</div>"
+            ], 
+            "flags": 0, 
+            "guid": "A3OgAwrh86", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kendetegner callable interface?", 
+                "- Har en abstrakt metode call()<div>- Tager ingen argumenter men returner en værdi.</div><div>- Den er generic så den tager alle typer.</div><div><br /></div><div>Implements Callable&lt;String&gt;&nbsp;</div><div><br /></div><div>MyTask t = (() --&gt; {(</div><div>&nbsp;kode</div><div>&nbsp;]}</div>"
+            ], 
+            "flags": 0, 
+            "guid": "o0mF&.rhfh", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er tråde hurtigere end callable og runnable?", 
+                "Nej, callable og runnable er hurtigere end at lave tråde."
+            ], 
+            "flags": 0, 
+            "guid": "mfj7(+.eIG", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kendetegner future interface?", 
+                "Future interface er arbejde, der vil blive gjort på et tidspunkt."
+            ], 
+            "flags": 0, 
+            "guid": "fN8}Y-#:6A", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kan future interfacet bruges til?", 
+                "Future interfacet kan bruges til at få data tilbage fra callable. Dår det med det samme, og får det løbende tilbage."
+            ], 
+            "flags": 0, 
+            "guid": "t6rYu#k=ZY", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kendetegner completable future?", 
+                "Completeable future er som en future, der kan completes."
+            ], 
+            "flags": 0, 
+            "guid": "Cj+Gq!<qy*", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er responsivness i forbindelse med tråde?", 
+                "Responsivness er når f.eks. en tråd kører UI, og en anden tråd kører bag."
+            ], 
+            "flags": 0, 
+            "guid": "u8t_;WVl>)", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er volatile?", 
+                "Volatile er et java keyword, der bliver brugt ved deklaration af en variabel."
+            ], 
+            "flags": 0, 
+            "guid": "M5OEE<;fcz", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør volatile?", 
+                "Volatile læser værdier fra main memory, og ikke fra cached data, hvorimod variabler, der er synkroniseret bliver cached."
+            ], 
+            "flags": 0, 
+            "guid": "#:)^({c4W", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Låses volatile variabler?", 
+                "Nej, volatile variabler låses ikke, så der kræves ingen lock på variablerne eller objekterne. Hvorimod synkronisering kræver lock på metoden eller kode blokken."
+            ], 
+            "flags": 0, 
+            "guid": "ezM%kT>i=D", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan volatile variabler være null?", 
+                "Ja, volatile variabler kan være null, hvorimod vi får nullPointerException, hvis vi bruger null Object."
+            ], 
+            "flags": 0, 
+            "guid": "GA;E@Cq:V`", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan vi undgå deadlock med volatile?", 
+                "Ja, da volatile ikke kræver lock kan vi undgå deadlock. Ved synkronisering kan der opstå deadlock, hvis vi ikke gør det rigtigt."
+            ], 
+            "flags": 0, 
+            "guid": "hYmy^e[q{4", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er volatile hurtigere end synkronisering?", 
+                "Ja, da der ikke bruges låse er volatile hurtigere end synkronisering pga ved synkronisering skal en tråd vente på en anden."
+            ], 
+            "flags": 0, 
+            "guid": "waHW5=h57A", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvornår kan volatile bruges?", 
+                "Volatile kan bruges&nbsp;når der er en selvstændig/afhængig værdi som bliver delt mellem mange tråde som en counter eller flag."
+            ], 
+            "flags": 0, 
+            "guid": "zXcs+3zFyg", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvornår er det godt at bruge synkronisering?", 
+                "Synkronisering er brugbar, når der bruges flere variable ofte og disse variabler udfører beregninger."
+            ], 
+            "flags": 0, 
+            "guid": "x!ogkyN<E~", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "tråde"
+            ]
         }
     ]
 }
