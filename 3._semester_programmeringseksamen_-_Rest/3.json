@@ -94,9 +94,7 @@
                 ]
             ], 
             "sortf": 0, 
-            "tags": [
-                "Rest"
-            ], 
+            "tags": [], 
             "tmpls": [
                 {
                     "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
@@ -263,6 +261,32 @@
             ], 
             "flags": 0, 
             "guid": "b^zq?8}1,^", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "&nbsp;Explain the benefit(s) from having a backend that exposes all data to clients via a REST-API", 
+                "<div>if data is exposed from a rest-api it is not possible to see how the backend is build, and security is thereby enhanced.&nbsp;</div><div>And you can get data from another remoteapi through your backend and the clients wouldn't know.</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>"
+            ], 
+            "flags": 0, 
+            "guid": "CB4Kt=j)8-", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "how does JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms?", 
+                "JSON and XML er basalt set bare formateret plain tekst som ikke er platform specifik og derfor kan et hvert system der modtager det arbejde med det.&nbsp;<div>Det gør også at det er ligemeget hvilket programmeringssprog en webservice er lavet i, den vil stadig virke med det der bliver sendt kommunikeret mellem client og server så længe det er JSON og XML eller anden supportet mediatype.&nbsp;<br /><div><br /><div><br /></div></div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "uNEckj=(p/", 
             "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
             "tags": [
                 "Rest"
