@@ -94,7 +94,13 @@
                 ]
             ], 
             "sortf": 0, 
+<<<<<<< HEAD
             "tags": [], 
+=======
+            "tags": [
+                "Rest"
+            ], 
+>>>>>>> 205cd654f7b1deec6f53390ec23593f4b88b502c
             "tmpls": [
                 {
                     "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 

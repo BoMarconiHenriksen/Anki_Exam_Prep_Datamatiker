@@ -1,5 +1,9 @@
 {
     "__type__": "Deck", 
+<<<<<<< HEAD
+=======
+    "activeTags": [], 
+>>>>>>> 205cd654f7b1deec6f53390ec23593f4b88b502c
     "children": [], 
     "crowdanki_uuid": "5d8b7100-664b-11e8-b33e-f0038c751458", 
     "deck_config_uuid": "5d8b7101-664b-11e8-b768-f0038c751458", 
@@ -53,6 +57,12 @@
     "dyn": 0, 
     "extendNew": 10, 
     "extendRev": 50, 
+<<<<<<< HEAD
+=======
+    "inactiveTags": [
+        "tråde"
+    ], 
+>>>>>>> 205cd654f7b1deec6f53390ec23593f4b88b502c
     "media_files": [], 
     "name": "3. semester - Programeringseksamen_2", 
     "note_models": [
@@ -93,7 +103,13 @@
                 ]
             ], 
             "sortf": 0, 
+<<<<<<< HEAD
             "tags": [], 
+=======
+            "tags": [
+                "Rest"
+            ], 
+>>>>>>> 205cd654f7b1deec6f53390ec23593f4b88b502c
             "tmpls": [
                 {
                     "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
