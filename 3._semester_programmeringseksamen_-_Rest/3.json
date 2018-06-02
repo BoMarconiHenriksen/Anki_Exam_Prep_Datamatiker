@@ -291,6 +291,18 @@
             "tags": [
                 "Rest"
             ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Explain about the topics Same Origin Policy and CORS and why/how they are relevant when calling REST services from an Ajax-call within a browser.", 
+                "- Same Origin Policy :&nbsp;Under the policy, a web browser permits scripts contained in a first web page to access data in a second web page, but only if both web pages have the same origin. An origin is defined as a combination of URI scheme, host name, and port number. This policy prevents a malicious script on one page from obtaining access to sensitive data on another web page through that page's Document Object Model.<div><br /></div><div>- CORS :&nbsp;CORS (Cross-Origin Resource Sharing) is a system, consisting of transmitting HTTP headers, that determines whether to block or fulfill requests for restricted resources on a web page from another domain outside the domain from which the resource originated.</div><div><br /></div><div>- The same-origin security policy forbids \"cross-domain\" requests by default. CORS gives web servers cross-domain access controls, which enable secure cross-domain data transfers.</div><div><br /></div><div>By default, a web browser does not allow scripts, such as JavaScript, to invoke the REST API when the script is not from the same origin as the REST API, that is, cross-origin requests are not enabled, you wil hve to configure Cross Origin Resource Sharing (CORS) to allow cross-origin requests from specified origins.</div><div><br /></div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "z?fdD32(lh", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
         }
     ]
 }
