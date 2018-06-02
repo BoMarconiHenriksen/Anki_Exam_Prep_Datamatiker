@@ -1,0 +1,310 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "2cfb9ec0-6673-11e8-8734-94e9793d2471", 
+    "deck_config_uuid": "2cfb9ec1-6673-11e8-b911-94e9793d2471", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "2cfb9ec1-6673-11e8-b911-94e9793d2471", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 0, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Default", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 20, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 36500, 
+                "minSpace": 1, 
+                "perDay": 200
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "mid": "1527935208979", 
+    "name": "3. semester programmeringseksamen - Rest", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic-0ee58", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [
+                "Rest"
+            ], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er REST (REpresentational State Transfer)", 
+                "REST bruges til webservices.<div><br /><div>En webservice er en afgrænset, server-baseret tjeneste på nettet, som aktiviseres via en protokol over nettet. der er tale om interaktion mellem to enheder.&nbsp;</div><div><br /></div><div>En webservice der bruger REST kaldes Restful.&nbsp;</div><div><br /></div><div>REST giver muligheden for nemt at sende rå data enten fra eller til en hjemmeside til/fra en anden. Dette gøres via DOM-objekter typisk i form af JSON, som egentlig bare er tekst og derfor kan sendes via http.&nbsp;</div><div><br /></div><div>Representational står for at det data der sendes mellem enhederne ikke er det data eller den ressource der ligger på pcen hos programmøren, men en tekst representation af den data enten i form af JSON, xml, html eller andre mediatypes.&nbsp;</div><div><br /></div><div>State: information om state bliver gemt hos klienten (client) da http er stateless.&nbsp;</div><div><br /></div><div>Transfer: giver sig selv der overføres representation af data mellem enheder.&nbsp;</div><div><br /></div><div><br /></div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "pshy.SNvN2", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er de 6 karakteristika ved REST (RESTfull web service)", 
+                "En webservice API kaldes restful når den har flg. 5 påkrævede karateristika:<div>Stateless, Cacheable, Client-Server, Layered System et Uniform Interface og frivilligt: code on demand<br /><div><b>Stateless&nbsp;</b></div><div>- der bliver ikke gemt noget om client kontekst på serveren mellem forespørgelser ved en rest interaktion.&nbsp;</div><div>-session state gemmes hos klienten ikke på serveren.&nbsp;</div><div>-Al information der er nødvendigt for at udføre en request er indeholdt i URL, query parametre, i http-requestens body eller i dens headers.&nbsp;</div><div><b>Cacheable</b></div><div>- det response der sendes fra rest som svar på en request fra clienten skal kunne gemmes i clientens cache lager (i browseren) og information om at det er muligt at gemme i client cache skal også indgå i et reponse.&nbsp;</div><div><b>Client-server</b>&nbsp;</div><div>client og server er seperareret fra hinanden.&nbsp;</div><div>Client skal ikke bruge ressourcer på at gemme data og det betyder at det er nemmere at overføre client kode mellem enheder.&nbsp;</div><div>Serveren skal ikke bruge ressourcer på det clienten laver, og serveren er dermed enklere og nemmere at skalere.&nbsp;</div><div><b>Layered System</b></div><div>representationen af data er koblet fra ressourcen det betyder at client ikke 'ved' om den får dataen fra serveren eller et mellemled. det gør også at clienten ikke kan se hvilke teknologier der er benyttet til at implementere et rest api. (om man bruger mysql. eller javascript eller andet til at holde data på serveren), eller noget som helst andet. Alt de får er et tekstobjekt json eller xml eller andre mediatypes som ikke afslører noget om hvordan det pågældende objekt er genereret.</div><div><b>Uniform interface</b></div><div><b>- </b>individuelle resourcer er identificeret ved hjælp af urls.&nbsp;</div><div>- der er 4 krav der skal opfyldes for at det kan anses for at være et uniformt interface</div><div>1. identifikation af ressourcer ved hjælp af unik URI indeholdende bl.a. http metoderne post, put, get eller delete sammen med url</div><div>2. ressourcerne kan manipuleres gennem deres representationer (html, xml, json, png, svg osv. forskellige mediatyper) de forskellge mediatyper skal indgå som en accept HTTP header med hver request og en uri kan derved understøtte forskellige mediatyper.</div><div>3. Self descriptive messages</div><div>en URI skal have en struktur der gør det nemt at forstå hvad man henter af oplysninger fra en api. hjemmeside navn skal følges af et overordnet emne samt en evt underkategori og så evt detaljer om hver ting i med egen adresse. http(s)://www.hjemmesidennavn.xxx/evtapi/etoverordnetemne/specifiktemneområde/emne</div><div><b>Code on demand(optional)</b></div><div><div>&nbsp;It allows clients to improve its flexibility because in fact it is the server who decides how certain things will be done. For instance, with Code-On-Demand, a client can download a javascript, java applet or even a flash application in order to encrypt communication so servers are not aware of any encryption routines / keys used in this process.</div><div><br /></div><div>However, using COD reduces visibility, which is why this constraint is optional. Also, not every API needs this kind of flexibility.</div></div><div><br /></div><div><br /></div><div>ordliste :</div><div>klient:&nbsp;Klient er inden for datalogien enten et program, som benytter en tjeneste, eller en maskine som primært benytter tjenester fra servermaskiner.</div><div><br /></div><div>Eksempel på et klientprogram er en webbrowser, som henter websider fra en webserver.</div><div><br /></div><div>Eksempel på en klientmaskine er en kontor pc, som henter filer og elektronisk post fra en servermaskine på netværket. Her er filhåndtering og e-postklienten henholdsvis klientprogrammer for filserveren og postserveren.</div><div><br /></div><div>portability:</div><div>the ability of software to be transferred from one machine or system to another.</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "n<gVgsgRE$", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest,", 
+                "restkarakteristika"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Explain the benefit(s) from having a backend that exposes all data to clients via a REST-API", 
+                "if data is exposed from a rest-api it is not possible to see how the backend is build, and security is thereby enhanced. And you can get data from another remoteapi through your backend and the clients wouldn't know.&nbsp;"
+            ], 
+            "flags": 0, 
+            "guid": "h~NlkV9rtk", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er REST (REpresentational State Transfer)", 
+                "REST bruges til webservices.<div>En webservice er en afgrænset, server-baseret tjeneste på nettet, som aktiviseres via en protokol over nettet. der er tale om interaktion mellem to enheder.</div><div><br /></div><div>En webservice der bruger REST kaldes Restful.</div><div><br /></div><div>REST giver muligheden for nemt at sende rå data enten fra eller til en hjemmeside til/fra en anden. Dette gøres via DOM-objekter typisk i form af JSON, som egentlig bare er tekst og derfor kan sendes via http.</div><div><br /></div><div>Representational står for at det data der sendes mellem enhederne ikke er det data eller den ressource der ligger på pcen hos programmøren, men en tekst representation af den data enten i form af JSON, xml, html eller andre mediatypes.</div><div><br /></div><div>State: information om state bliver gemt hos klienten (client) da http er stateless.</div><div><br /></div><div>Transfer: giver sig selv der overføres representation af data mellem enheder.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "ob.8|wRSu}", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er de 6 karakteristika ved REST (RESTfull web service)", 
+                "En webservice API kaldes restful når den har flg. 5 påkrævede karateristika: Stateless, Cacheable, Client-Server, Layered System et Uniform Interface og frivilligt: code on demand"
+            ], 
+            "flags": 0, 
+            "guid": "F5hDnu~Lb&", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad menes der med Stateless når vi snakker om REST karakteristikker", 
+                "-der bliver ikke gemt noget om client kontekst på serveren mellem forespørgelser ved en rest interaktion.<div><br /></div><div>-session state gemmes hos klienten ikke på serveren.</div><div><br /></div><div>-Al information der er nødvendigt for at udføre en request er indeholdt i URL, query parametre, i http-requestens body eller i dens headers.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "zRQJPt2a`:", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad menes der med at en RESTful service skal være cacheable?", 
+                "- det response der sendes fra en RESTful webserive som svar på en request fra clienten skal kunne gemmes i clientens cache lager (i browseren) og information om at det er muligt at gemme i client cache skal også indgå i et reponse."
+            ], 
+            "flags": 0, 
+            "guid": "Dh-)ecVS3Z", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad menes der med REST karakteristikken client-server?", 
+                "- client og server er adskilt fra hinanden.<div><br /><div>- Client skal ikke bruge ressourcer på at gemme data og det betyder at det er nemmere at overføre client kode mellem enheder.</div><div><br /></div><div>-Serveren skal ikke bruge ressourcer på det clienten laver, og serveren er dermed enklere og nemmere at skalere.</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "cj)AE[(mif", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "beskriv Layered System i REST", 
+                "-representationen af data er koblet fra ressourcen det betyder at client ikke 'ved' om den får dataen fra serveren eller et mellemled.&nbsp;<div><br /><div>Det gør også at clienten ikke kan se hvilke teknologier der er benyttet til at implementere et rest api. (om man bruger mysql. eller javascript eller andet til at holde data på serveren), eller noget som helst andet.&nbsp;</div><div><br /></div><div>Alt de får er et tekstobjekt json eller xml eller andre mediatypes som ikke afslører noget om hvordan det pågældende objekt er genereret.</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "gU=GC3PX_.", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad menes der med Uniform interface i REST?", 
+                "individuelle resourcer er identificeret ved hjælp af urls.<div><br /></div><div>- der er 4 krav der skal opfyldes for at det kan anses for at være et uniformt interface</div><div><br /></div><div>1. identifikation af ressourcer ved hjælp af unik URI indeholdende bl.a. http metoderne post, put, get eller delete sammen med url</div><div><br /></div><div>2. ressourcerne kan manipuleres gennem deres representationer (html, xml, json, png, svg osv. forskellige mediatyper) de forskellge mediatyper skal indgå som en accept HTTP header med hver request og en uri kan derved understøtte forskellige mediatyper.</div><div><br /></div><div>3. Self descriptive messages</div><div>en URI skal have en struktur der gør det nemt at forstå hvad man henter af oplysninger fra en api. hjemmeside navn skal følges af et overordnet emne samt en evt underkategori og så evt detaljer om hver ting i med egen adresse. http(s)://www.hjemmesidennavn.xxx/evtapi/etoverordnetemne/specifiktemneområde/emne</div><div><br /></div><div>4.&nbsp;Hypermedia As The Engine Of Application State (HATEOAS) is a component of the REST application architecture that distinguishes it from other network application architectures.</div><div><br /></div><div>With HATEOAS, a client interacts with a network application whose application servers provide information dynamically through hypermedia. A REST client needs little to no prior knowledge about how to interact with an application or server beyond a generic understanding of hypermedia.</div><div><br /></div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "lp(OV8$Dv9", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Beskriv REST karakteristikken&nbsp;Code on demand", 
+                "Code on demand er den eneste at de 6 Rest egenskaber der kan fravælges.&nbsp;<div><br /></div><div>It allows clients to improve its flexibility because in fact it is the server who decides how certain things will be done. For instance, with Code-On-Demand, a client can download a javascript, java applet or even a flash application in order to encrypt communication so servers are not aware of any encryption routines / keys used in this process.</div><div><br /></div><div>However, using COD reduces visibility, which is why this constraint is optional. Also, not every API needs this kind of flexibility.</div><div><br /></div><div>Klient er inden for datalogien enten et program, som benytter en tjeneste, eller en maskine som primært benytter tjenester fra servermaskiner.</div><div><br /></div><div>Eksempel på et klientprogram er en webbrowser, som henter websider fra en webserver.</div><div><br /></div><div>Eksempel på en klientmaskine er en kontor pc, som henter filer og elektronisk post fra en servermaskine på netværket. Her er filhåndtering og e-postklienten henholdsvis klientprogrammer for filserveren og postserveren.</div><div><br /></div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "b^zq?8}1,^", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "&nbsp;Explain the benefit(s) from having a backend that exposes all data to clients via a REST-API", 
+                "<div>if data is exposed from a rest-api it is not possible to see how the backend is build, and security is thereby enhanced.&nbsp;</div><div>And you can get data from another remoteapi through your backend and the clients wouldn't know.</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>"
+            ], 
+            "flags": 0, 
+            "guid": "CB4Kt=j)8-", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "how does JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms?", 
+                "JSON and XML er basalt set bare formateret plain tekst som ikke er platform specifik og derfor kan et hvert system der modtager det arbejde med det.&nbsp;<div>Det gør også at det er ligemeget hvilket programmeringssprog en webservice er lavet i, den vil stadig virke med det der bliver sendt kommunikeret mellem client og server så længe det er JSON og XML eller anden supportet mediatype.&nbsp;<br /><div><br /><div><br /></div></div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "uNEckj=(p/", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "Rest"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Explain about the topics Same Origin Policy and CORS and why/how they are relevant when calling REST services from an Ajax-call within a browser.", 
+                "- Same Origin Policy :&nbsp;Under the policy, a web browser permits scripts contained in a first web page to access data in a second web page, but only if both web pages have the same origin. An origin is defined as a combination of URI scheme, host name, and port number. This policy prevents a malicious script on one page from obtaining access to sensitive data on another web page through that page's Document Object Model.<div><br /></div><div>- CORS :&nbsp;CORS (Cross-Origin Resource Sharing) is a system, consisting of transmitting HTTP headers, that determines whether to block or fulfill requests for restricted resources on a web page from another domain outside the domain from which the resource originated.</div><div><br /></div><div>- The same-origin security policy forbids \"cross-domain\" requests by default. CORS gives web servers cross-domain access controls, which enable secure cross-domain data transfers.</div><div><br /></div><div>By default, a web browser does not allow scripts, such as JavaScript, to invoke the REST API when the script is not from the same origin as the REST API, that is, cross-origin requests are not enabled, you wil hve to configure Cross Origin Resource Sharing (CORS) to allow cross-origin requests from specified origins.</div><div><br /></div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "z?fdD32(lh", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }
+    ]
+}
