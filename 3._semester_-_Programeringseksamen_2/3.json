@@ -173,7 +173,7 @@
             "data": "", 
             "fields": [
                 "Hvad er JSX?", 
-                "Det er er den måde man koder html i react. JSX oversættes til rigtig html via Babel.<div><br /></div><div>- en syntaktisk udvidelse til JavaScript (et javascript bibliotek). Det er React's anbefalede måde at beskrive hvordan et userinterface skal se ud.&nbsp;</div><div>- JSX producerer React elementer som kan bliver renderet af React.&nbsp;</div>"
+                "Det er er den måde man koder html i react. JSX oversættes til rigtig html via Babel.<div><br /></div><div>- en syntaktisk udvidelse til JavaScript. Det er React's anbefalede måde at beskrive hvordan et userinterface skal se ud.&nbsp;</div><div>- JSX producerer React elementer som kan bliver renderet af React.&nbsp;</div>"
             ], 
             "flags": 0, 
             "guid": "zIyJj/vP:o", 
