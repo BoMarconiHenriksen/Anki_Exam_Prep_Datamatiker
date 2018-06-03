@@ -94,7 +94,9 @@
                 ]
             ], 
             "sortf": 0, 
-            "tags": [], 
+            "tags": [
+                "Rest"
+            ], 
             "tmpls": [
                 {
                     "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
@@ -243,7 +245,7 @@
             "data": "", 
             "fields": [
                 "Hvad menes der med Uniform interface i REST?", 
-                "individuelle resourcer er identificeret ved hjælp af urls.<div><br /></div><div>- der er 4 krav der skal opfyldes for at det kan anses for at være et uniformt interface</div><div><br /></div><div>1. identifikation af ressourcer ved hjælp af unik URI indeholdende bl.a. http metoderne post, put, get eller delete sammen med url</div><div><br /></div><div>2. ressourcerne kan manipuleres gennem deres representationer (html, xml, json, png, svg osv. forskellige mediatyper) de forskellge mediatyper skal indgå som en accept HTTP header med hver request og en uri kan derved understøtte forskellige mediatyper.</div><div><br /></div><div>3. Self descriptive messages</div><div>en URI skal have en struktur der gør det nemt at forstå hvad man henter af oplysninger fra en api. hjemmeside navn skal følges af et overordnet emne samt en evt underkategori og så evt detaljer om hver ting i med egen adresse. http(s)://www.hjemmesidennavn.xxx/evtapi/etoverordnetemne/specifiktemneområde/emne</div><div><br /></div><div>4.&nbsp;Hypermedia As The Engine Of Application State (HATEOAS) is a component of the REST application architecture that distinguishes it from other network application architectures.</div><div><br /></div><div>With HATEOAS, a client interacts with a network application whose application servers provide information dynamically through hypermedia. A REST client needs little to no prior knowledge about how to interact with an application or server beyond a generic understanding of hypermedia.</div><div><br /></div><div><br /></div>"
+                "individuelle resourcer er identificeret ved hjælp af urls.<div><br /></div><div>- der er 4 krav der skal opfyldes for at det kan anses for at være et uniformt interface</div><div><br /></div><div>1. identifikation af ressourcer ved hjælp af unik URI indeholdende bl.a. http metoderne post, put, get eller delete sammen med en url (URI= uniform ressource identifier, URL= uniform ressource location)</div><div><br /></div><div>2. ressourcerne kan manipuleres gennem deres representationer (html, xml, json, png, svg osv. forskellige mediatyper) de forskellge mediatyper skal indgå som en accept HTTP header med hver request og en uri kan derved understøtte forskellige mediatyper.</div><div><br /></div><div>3. Self descriptive messages</div><div>en URI skal have en struktur der gør det nemt at forstå hvad man henter af oplysninger fra en api. hjemmeside navn skal følges af et overordnet emne samt en evt underkategori og så evt detaljer om hver ting i med egen adresse. http(s)://www.hjemmesidennavn.xxx/evtapi/etoverordnetemne/specifiktemneområde/emne</div><div><br /></div><div>4.&nbsp;Hypermedia As The Engine Of Application State (HATEOAS) is a component of the REST application architecture that distinguishes it from other network application architectures.</div><div><br /></div><div>With HATEOAS, a client interacts with a network application whose application servers provide information dynamically through hypermedia. A REST client needs little to no prior knowledge about how to interact with an application or server beyond a generic understanding of hypermedia.</div><div><br /></div><div><br /></div>"
             ], 
             "flags": 0, 
             "guid": "lp(OV8$Dv9", 
@@ -283,7 +285,7 @@
             "data": "", 
             "fields": [
                 "how does JSON or XML supports communication between subsystems, even when the subsystems are implemented on diﬀerent platforms?", 
-                "JSON and XML er basalt set bare formateret plain tekst som ikke er platform specifik og derfor kan et hvert system der modtager det arbejde med det.&nbsp;<div>Det gør også at det er ligemeget hvilket programmeringssprog en webservice er lavet i, den vil stadig virke med det der bliver sendt kommunikeret mellem client og server så længe det er JSON og XML eller anden supportet mediatype.&nbsp;<br /><div><br /><div><br /></div></div></div>"
+                "JSON and XML er basalt set bare formateret plain tekst som ikke er platform specifik og derfor kan et hvert system der modtager det arbejde med det.&nbsp;<div><br /><div>Det gør også at det er ligemeget hvilket programmeringssprog en webservice er lavet i, den vil stadig virke med det der bliver sendt kommunikeret mellem client og server så længe det er JSON og XML eller anden supportet mediatype.&nbsp;<br /><div><br /><div><br /></div></div></div></div>"
             ], 
             "flags": 0, 
             "guid": "uNEckj=(p/", 
