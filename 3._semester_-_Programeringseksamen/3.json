@@ -55,10 +55,7 @@
     "extendRev": 50, 
     "media_files": [], 
     "name": "3. semester - Programeringseksamen", 
-<<<<<<< HEAD
-    "note_models": [], 
-    "notes": []
-=======
+
     "note_models": [
         {
             "__type__": "NoteModel", 
@@ -1921,5 +1918,5 @@
             ]
         }
     ]
->>>>>>> 205cd654f7b1deec6f53390ec23593f4b88b502c
+
 }
