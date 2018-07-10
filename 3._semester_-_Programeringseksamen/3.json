@@ -1,13 +1,13 @@
 {
     "__type__": "Deck", 
     "children": [], 
-    "crowdanki_uuid": "5d8b7100-664b-11e8-b33e-f0038c751458", 
-    "deck_config_uuid": "5d8b7101-664b-11e8-b768-f0038c751458", 
+    "crowdanki_uuid": "6141e8b0-66a0-11e8-bf86-94e9793d2471", 
+    "deck_config_uuid": "6141e8b1-66a0-11e8-9125-94e9793d2471", 
     "deck_configurations": [
         {
             "__type__": "DeckConfig", 
             "autoplay": true, 
-            "crowdanki_uuid": "5d8b7101-664b-11e8-b768-f0038c751458", 
+            "crowdanki_uuid": "6141e8b1-66a0-11e8-9125-94e9793d2471", 
             "dyn": false, 
             "lapse": {
                 "delays": [
@@ -29,7 +29,7 @@
                 "initialFactor": 2500, 
                 "ints": [
                     1, 
-                    2, 
+                    1, 
                     7
                 ], 
                 "order": 1, 
@@ -55,6 +55,7 @@
     "extendRev": 50, 
     "media_files": [], 
     "name": "3. semester - Programeringseksamen", 
+
     "note_models": [
         {
             "__type__": "NoteModel", 
@@ -1917,4 +1918,5 @@
             ]
         }
     ]
+
 }
