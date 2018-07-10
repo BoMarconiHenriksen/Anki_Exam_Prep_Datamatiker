@@ -1,0 +1,198 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "d8bd860f-6803-11e8-a110-94e9793d2471", 
+    "deck_config_uuid": "2cfb9ec1-6673-11e8-b911-94e9793d2471", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "2cfb9ec1-6673-11e8-b911-94e9793d2471", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 0, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Default", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 20, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 36500, 
+                "minSpace": 1, 
+                "perDay": 200
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "name": "3. semester  programmeringseksamen-Persistence", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic-0ee58", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "hvad er persistence?", 
+                "In computer science, persistence refers to the characteristic of state that outlives the process that created it.<div><br /></div><div><div><br /></div><div><br /></div><div><br /></div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "I2NAW&6yGF", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad står JPA for?", 
+                "Java Persistence API"
+            ], 
+            "flags": 0, 
+            "guid": "wbx-hGh<MW", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "HVad står JPQL for?", 
+                "Java Persistence Query Language"
+            ], 
+            "flags": 0, 
+            "guid": "f~.Ao]j}iT", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad står ORM for?", 
+                "Object Relational Mapping.&nbsp;"
+            ], 
+            "flags": 0, 
+            "guid": "L[Z]E(7%Rr", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Forskellige måder at håndtere persistence på?", 
+                "Persistence er at gemme data fra en process hvor data kan bruges selvom processen er stoppet.&nbsp;<div><br /></div><div>De sidste tre semestre har vi brugt forskellige metoder at gemme data på.&nbsp;</div><div><br /></div><div>Man kan gemme data i en liste eller hashmap. Eller i en relationel database enten ved hjælp af mysql queries eller ved hjælp af jpql. I en webbrowser er der mulighed for at gemme en cookie.&nbsp;</div>"
+            ], 
+            "flags": 0, 
+            "guid": "PtRv,<=RaU", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Forklar Rationalet bag ORM", 
+                "<div>Fordele:</div><div>mindre kode (mindre arbejde)&nbsp;</div><div>I stedet for at skulle lave en database og en bunke entiteter i java kan man nøjes med at lave den ene af delene og så benytte sig af en persistence unit til at generere entitetsklasser fra en database eller en database fra klasser</div><div><br /></div><div>Abstraherer datalaget væk til en hvis grad</div><div>vi slipper for at lave Mappere og Data Acces Objekt klasser.</div><div>&nbsp;</div><div>Tillader os at blive i det objektorienterede paradigme.&nbsp;</div><div><br /></div><div>Bagdele:</div><div><div><br /></div><div>Slører hvad der egentlig sker&nbsp;</div><div>Men ikke altid nok</div><div>Resulterer ofte i dårligt designede databaser (databaser håndterer ikke nedarvning f.eks.)</div><div><br /></div><div>&nbsp; &nbsp; Not as easy as it might seem (impedance sort of ruins the point, doesn't it?)</div></div><div><br /></div><div>Object-oriented programs are designed with techniques that result in encapsulated objects whose representation is hidden. In an object-oriented framework, the underlying properties of a given object are expected to be unexposed to any interface outside of the one implemented alongside the object. However, object-relational mapping necessarily exposes the underlying content of an object to interact with an interface that the object implementation cannot specify. Hence, object-relational mapping violates the encapsulation of the object.</div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "Hlugzxl^~0", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er en entitet ?", 
+                "Entitet er det vi kalder hvad vi gerne vil gemme / persiste med jpa (java persistence api)<div><br /></div><div><div>For at være en entitet skal en javaklasse:</div><div>&nbsp; - have en @Entity annotation</div><div>&nbsp; - og et &nbsp;@Id field.</div><div>&nbsp; - skal have en public eller protected tom constructor</div><div>&nbsp; - må ikke være final, eller have final methods eller final instance variables</div><div>&nbsp; - skal implementere Serializable,hvis instancer bliver håndteret uden for entitetsmangeren (detached / frakoblet).&nbsp;</div><div>&nbsp; - kan extende både entitets- og ikke entitetsklasser og ikke-entitetsklasser kan extende dem.</div><div><br /></div></div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "yo5rFD#zX)", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }
+    ]
+}
