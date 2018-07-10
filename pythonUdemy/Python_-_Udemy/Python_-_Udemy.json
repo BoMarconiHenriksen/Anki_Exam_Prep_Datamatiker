@@ -1,0 +1,408 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "f27b75a1-8444-11e8-af43-f0038c751458", 
+    "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 0, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Default", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 20, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 36500, 
+                "minSpace": 1, 
+                "perDay": 200
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "name": "Python - Udemy", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er Python et dynamisk typed sprog eller et statically typed sprog?&nbsp;", 
+                "Dynamisk."
+            ], 
+            "flags": 0, 
+            "guid": "FDbEY^w&d;", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad betyder det at Python er et dynamisk typed sprog?&nbsp;", 
+                "Du kan reasigne variabler til en anden datatype."
+            ], 
+            "flags": 0, 
+            "guid": "Nhs5$JH^hS", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er fordelene ved dynamisk typing?&nbsp;", 
+                "Det er lettere at arbejde med og hurtigere at programmere.&nbsp;"
+            ], 
+            "flags": 0, 
+            "guid": "tBy_V$,Qc+", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Hvad er ulemperne ved dynamisk typing?&nbsp;</div><div><br /></div>", 
+                "Du skal være opmærksom på typer, og der kan opstå fejl ved data typer."
+            ], 
+            "flags": 0, 
+            "guid": "ijgN!.YoFJ", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Er det muligt at tjekke variablernes data type i python?&nbsp;</div><div><br /></div>", 
+                "Ja, med funktionen type(variabelnavn)"
+            ], 
+            "flags": 0, 
+            "guid": "jq#W!1H#ia", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er indexing?&nbsp;", 
+                "Det er muligt at hente et bogstav fra en string eks. myString[0]."
+            ], 
+            "flags": 0, 
+            "guid": "t.S&nv8IFb", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Hvad er reverse indexing?&nbsp;</div><div><br /></div>", 
+                "Hvis du har brug for at få det sidst bogstav i en string så brug -1. Eks. myString[-1]."
+            ], 
+            "flags": 0, 
+            "guid": "E:{:*g.=v6", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Hvad er slicing?&nbsp;</div>", 
+                "I en string er det muligt at hente en del af den string ud."
+            ], 
+            "flags": 0, 
+            "guid": "ejh^O39JRn", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilken syntaks har slicing?&nbsp;", 
+                "[start:stop:step]"
+            ], 
+            "flags": 0, 
+            "guid": "i8<]|aTEvA", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "I slicing, hvad er start?&nbsp;", 
+                "Start er det index nummer, hvor slice skal starte."
+            ], 
+            "flags": 0, 
+            "guid": "P,;HC]k>%)", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>I slicing, hvad er stop?&nbsp;</div>", 
+                "Det index nummer du vil gå op til, men ikke inkluderer."
+            ], 
+            "flags": 0, 
+            "guid": "kY@<Fc#X2j", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>I slicing, hvad er step?&nbsp;</div>", 
+                "Det er når du springer en karakter over eks. myString[::2]. Tager hver anden karakter i hele stringen."
+            ], 
+            "flags": 0, 
+            "guid": "jd>#`cFQ]|", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at tjekke længden på en string?&nbsp;", 
+                "Ja, med len()."
+            ], 
+            "flags": 0, 
+            "guid": "w0-]G0;HK%", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>I slicing, hvad er syntaksen for at slice fra 2. Karakter og resten af stringen?&nbsp;</div><div><br /></div>", 
+                "myString[2:]"
+            ], 
+            "flags": 0, 
+            "guid": "t3trzWX2Ck", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "I slicing, hvad er syntaksen for at slice fra første karakter til 3. Indexnummer?&nbsp;", 
+                "myString[:3]"
+            ], 
+            "flags": 0, 
+            "guid": "KT~SJCa<D?", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at reverse en string med slicing?&nbsp;", 
+                "Ja, ved at bruge step size og reverse indexing. Eks. myString[::-1]"
+            ], 
+            "flags": 0, 
+            "guid": "A`N(e513EK", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad betyder det at en string er immutable?&nbsp;", 
+                "Hvis du vil ændrer en string kan du ikke bare tage en karakter i stringen, og skifte det ud med en anden karakter."
+            ], 
+            "flags": 0, 
+            "guid": "K%w=/UY2ET", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Hvordan kan man komme rundt om string immutability i python?&nbsp;</div>", 
+                "<div>Det kan gøres med concatination. &nbsp;Eks. Ændrer Sam til Pam.</div><div><br /></div><div><span class=\"Apple-tab-span\" style=\"white-space: pre\"> </span>name = “Sam”</div><div><span class=\"Apple-tab-span\" style=\"white-space: pre; \"> </span>last_letters = name[1:]</div><div><span class=\"Apple-tab-span\" style=\"white-space: pre; \"> </span>“P” + last_letters</div>"
+            ], 
+            "flags": 0, 
+            "guid": "iUG|(w69k$", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Er det muligt at bruge multiplikation med bogstaver?&nbsp;</div>", 
+                "<div>Ja, eks.</div><div><br /></div><div><span class=\"Apple-tab-span\" style=\"white-space: pre\"> </span>letter = “z”</div><div><span class=\"Apple-tab-span\" style=\"white-space: pre; \"> </span>letter * 10</div>"
+            ], 
+            "flags": 0, 
+            "guid": "Id%Dk{~bqr", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Er det muligt at lave en string til store bogstaver?&nbsp;</div>", 
+                "<div>Ja, eks.&nbsp;</div><div><br /></div><div><span class=\"Apple-tab-span\" style=\"white-space: pre\"> </span>x = “Hello World”</div><div><span class=\"Apple-tab-span\" style=\"white-space: pre; \"> </span>x = x.upper()</div>"
+            ], 
+            "flags": 0, 
+            "guid": "rJ`?Jt)!>Q", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Hvad gør split?&nbsp;</div>", 
+                "Den laver en list på baggrund af en string, og splitter ved mellemrummet eller det bogstav du bruger som parameter."
+            ], 
+            "flags": 0, 
+            "guid": "zYZ:BZh%7g", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "python-udemy"
+            ]
+        }
+    ]
+}
