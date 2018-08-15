@@ -1,0 +1,668 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "1b61bc4f-a0cd-11e8-ac39-f0038c751458", 
+    "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 0, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Default", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 20, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 36500, 
+                "minSpace": 1, 
+                "perDay": 200
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "mid": "1527848507180", 
+    "name": "Javascript - Asim Hussain", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [
+                "js"
+            ], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er \"use strict\" (strict mode)?", 
+                "<div>Gør det muligt at placer et program/fil eller en funktion i&nbsp;det som kaldes \"a strict operate context\".</div>"
+            ], 
+            "flags": 0, 
+            "guid": "g<0[dpi{s=", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør \"use strict\" (strict mode)?", 
+                "<div>Det gør debugging lettere.&nbsp;</div><div>Så kode fejl, som ellers ville være blevet ignoret vil&nbsp;nu generater fejl eller exceptions.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "xd+-s`~Dg1", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad sker der i \"strict mode\", hvis en variable ikke er defineret?", 
+                "Bruges en variable i \"strict mode\" og den ikke er defineret giver det en fejl."
+            ], 
+            "flags": 0, 
+            "guid": "qv8,0]/Eri", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan aktiveres strict mode i en javaScript fil?", 
+                "I toppen af filen skrives \"use strict\";"
+            ], 
+            "flags": 0, 
+            "guid": "rzZep7d~ky", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvorfor er \"use strict\" en String?", 
+                "<div>Da featuren i sin tid blev implementeret, var den&nbsp;ikke supporeted af gamle browsere.</div><div>Hvis de havde valgt, at&nbsp;bruge keyet words use strict,&nbsp;</div><div>så ville de ældre browsere&nbsp;have fået fejl.&nbsp;</div><div>I stedet lavede de det som en string,&nbsp;</div><div>så en ældre browser ville se det som en string i toppen af filen.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "m@iU_I{~NG", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at bruge \"use strict\" udvalgte steder?", 
+                "<div>Ja, det kan bruges ved funktioner.</div><div><br /></div><div><i>// ikke strict mode</i></div><div>funkction newCode() {</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>\"use strict\";</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span><i>//strict mode...</i></div><div>}</div>"
+            ], 
+            "flags": 0, 
+            "guid": "Ox:7tqd6N6", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Hvorfor bruge \"use strict\" mode?</div>", 
+                "Det bliver lettere at opdage stavefejl/syntaks fejl i variabel navne."
+            ], 
+            "flags": 0, 
+            "guid": "LwMAa1dr#Q", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Hvad tvinger \"use strict\" mode dig til?</div>", 
+                "Den tvinger dig til at bruge variabler, der kun er blevet defineret."
+            ], 
+            "flags": 0, 
+            "guid": "krcv.}u4qX", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør \"use strict\" ellers?", 
+                "<div>Den forhindrer dig i at bruge variable navne som er reserveret til</div><div>fremtidige udgaver af javaScript.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "BPf5pQY#{j", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Kan man delete funktions i \"use strict\" mode?</div>", 
+                "Nej, det er ikke muligt at delete funktions i \"use strict mode\"."
+            ], 
+            "flags": 0, 
+            "guid": "OzAGXu75Kf", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at delete variabler i \"use strict\" mode?", 
+                "Nej, det er ikke muligt at slette variabler i \"use strict\" mode."
+            ], 
+            "flags": 0, 
+            "guid": "P,sEW%i$h", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at slette arguments to functions i \"use strict\" mode?", 
+                "Nej, det er ikke muligt at slette argumenter i \"use strict\" mode."
+            ], 
+            "flags": 0, 
+            "guid": "Ew4Zppg7I/", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad sker der med key wordet eval i \"use strict\" mode?", 
+                "Det bliver lidt mere sikkert at bruge. F.eks. kan det(eval) ikke bruges som variabel navn."
+            ], 
+            "flags": 0, 
+            "guid": "DM=A_R_2/2", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør eval i javaScript?", 
+                "<div>Lader dig udføre javaScript expressions/små bidder af kode ved at parse in a string.</div><div>eval(\"var a = 1\");</div>"
+            ], 
+            "flags": 0, 
+            "guid": "o=@KLahkl0", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad sker der med eval i \"use strict\" mode?", 
+                "<div>I \"use strict\" mode exister din kode bid kun i eval dvs deklerarer</div><div>du var i eval, så kan den ikke bruges udenfor eval.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "oGQHueOR&9", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "js,", 
+                "mode", 
+                "strict"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Does javaScript pass variables by values or reference?</div><div><br /></div><div>\"use strict\";</div><div><br /></div><div>var a;</div><div>function foo(a) {</div><div><br /></div><div>}</div>", 
+                "Primitive typer som numre, strings, boolean passes som values, og objekter passes ved reference."
+            ], 
+            "flags": 0, 
+            "guid": "Q]1rH~Se#6", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "by", 
+                "js,", 
+                "or", 
+                "pass", 
+                "reference", 
+                "value"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Forklar hvad er pass by value?", 
+                "<div>Hvis du ændrer en værdi af en primitiv type inde i en funktion, så vil ændringen ikke have</div><div>betydning for variablen i det ydre scope(uden for funktionen). Husk: Du parser ind en kopi a variablen a.</div><div><br /></div><div><div>\"use strict\"</div><div>var a = 1;</div><div>function foo(a) {</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>a = 2;</div><div>}</div><div><br /></div><div>foo(a);</div><div>console.log(a);</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "mkXtuYSRF^", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "by", 
+                "js,", 
+                "or", 
+                "pass", 
+                "reference", 
+                "value"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Forklar hvad er pass by reference?", 
+                "Når du passer ved referance så parser du noget, som peger på noget, i stedet for at parse en kopi af objektet.<div><br /></div><div><div>Når du ændre en property i et objekt i en funktion vil det blive reflekteret i det ydre scope(uden for funktionen).</div><div><br /></div><div>\"use strict\"</div><div>var a = {};</div><div>function foo(a) {</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>a.moo = false;</div><div>}</div><div><br /></div><div>foo(a);</div><div>console.log(a);</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "u/=,6KAr97", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "by", 
+                "js,", 
+                "or", 
+                "pass", 
+                "reference", 
+                "value"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Når du parser et objekt til en funktion, er det så en kopi af objektet du parser?", 
+                "<div>Nej, du parser en referance som peger på objektet, og derfor vil værdien(property) som du ændrer i funktionen blive afspejlet i&nbsp;objektet uden for funktionen.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "cvWz$$hBy8", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "by", 
+                "js,", 
+                "or", 
+                "pass", 
+                "reference", 
+                "value"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Når vi parser et objekt i javascript til en funktion, hvad kan vi så ikke ændrer?", 
+                "Vi kan ikke ændrer det som referancen peger på. Vi kan kun ændre eller tilføje en property(værdien).<div><br /></div><div><div>\"use strict\"</div><div>var a = {\"moo\": \"too\"};</div><div>function foo(a) {</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>//kan ikke lade sig gøre, da vi ikke kan ændre hvad a peger på.</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>a = {\"too\": \"moo\"};</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>//Vi kan kun ændre eller tilføje en property(værdien).</div><div><span class=\"Apple-tab-span\" style=\"white-space:pre\"> </span>a.too = \"moo\";</div><div>}</div><div><br /></div><div>foo(a);</div><div>console.log(a);</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "pzG9(8~c,Q", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "advanced", 
+                "by", 
+                "js,", 
+                "or", 
+                "pass", 
+                "reference", 
+                "value"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilke typer findes i javascript?", 
+                "<div>Boolean</div><div>Number</div><div>String</div><div>Null</div><div>Undefined</div><div><br /></div><div>Objekt</div>"
+            ], 
+            "flags": 0, 
+            "guid": "m]kn^~t.U4", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilke primitive typer findes i javascript?", 
+                "<div>Boolean //true/false //typeof(1);</div><div>Number // 1 eller 1.5</div><div>String // \"a\" eller 'a'</div><div>Null // null</div><div>Undefined // undefined</div>"
+            ], 
+            "flags": 0, 
+            "guid": "uD(0XumC$c", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilke non-primitive typer findes i javascript?", 
+                "Objekt"
+            ], 
+            "flags": 0, 
+            "guid": "nE}wCyvUoY", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Hvad er forskellen på et dynamisk sprog (som javaskript) og et statisk sprog (static typed language) som (Java)?</div>", 
+                "<div>I Java definer vi variablerne ved f.eks. at fortælle at en variable er en String og kun en String.</div><div><br /></div><div>String a = \"moo\";</div>"
+            ], 
+            "flags": 0, 
+            "guid": "wj{Ht*PTxn", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "I javascript hvordan definer vi om en variable er en int eller string?", 
+                "Det afhænger af den værdi som vi giver variablen."
+            ], 
+            "flags": 0, 
+            "guid": "X/wZqyy~w", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør javascript til et dynamisk sprog?", 
+                "<div>Et dynamisk sprog kan kentegnes ved at en variable kan ændre type, hvis variablens værdi ændrer sig.</div><div><br /></div><div>var a = \"moo\";</div><div>typeof(a);</div><div>a = 1;</div><div>typeof(a);</div>"
+            ], 
+            "flags": 0, 
+            "guid": "wldR){<+yG", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvornår defineres typen af en variable i javascript i forhold til java?", 
+                "<div>Typen af en variable sættes dynamisk ved runtime, hvorimod i Java sættes typen af variablen statisk når vi skriver koden.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "q$:d[TC#_A", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er fordelen ved et dynamisk skrevet sprog?", 
+                "Det er hurtigere at programmere."
+            ], 
+            "flags": 0, 
+            "guid": "KDVsFS|{@8", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvornår kan der opstå probelmer med dynamiske sprog i forhold til Java?", 
+                "Ved runtime. I Java sker fejl typisk når koden compiles."
+            ], 
+            "flags": 0, 
+            "guid": "e/nxFC_EbW", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er forskellen på null og undefined?", 
+                "<div>Undefined betyder ingen værdi. Bruges ved variabler, der ikke er blevet initialiseret eller et ukendt property af et objekt.</div><div><br /></div><div><div>var a;</div><div>console.log(a);</div><div><br /></div><div>Null bruges af udviklere til at indiker at der ikke er nogen værdi.</div><div><br /></div><div>var a = null;</div><div>console.log(a);</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "kv~ZH5whFt", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Sætter javascript engine en værdi til null?", 
+                "Nej, javascript engine vil aldrig sætte en værdi til null. Den vil sætte den til undefined."
+            ], 
+            "flags": 0, 
+            "guid": "FgJQWVX%m:", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kan null bruges til i Java og ikke i javascript?", 
+                "<div>Null kan bruges i Java når vi deklarer en variable og give den værdien null,&nbsp;</div><div>da vi ved at den senere får en værdi(fravær af værdi). Det kan man ikke i javascript.</div><div>I javascript er null en værdi. typeof(null). Null har kun en værdi, og det er string/key wordet null.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "tPf1jjtqFJ", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilken værdi har undefined?", 
+                "Undefined har kun en værdi, og det er string/key wordet undefined."
+            ], 
+            "flags": 0, 
+            "guid": "vZWWkwvU{>", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilken værdi har undefined som type?", 
+                "Undefined som type har en værdi, som er undefined."
+            ], 
+            "flags": 0, 
+            "guid": "x::U#V2QUN", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "types"
+            ]
+        }
+    ]
+}
