@@ -1,0 +1,324 @@
+{
+    "__type__": "Deck", 
+    "children": [
+        {
+            "__type__": "Deck", 
+            "children": [], 
+            "crowdanki_uuid": "d96d6d84-a0cc-11e8-b78e-f0038c751458", 
+            "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+            "desc": "", 
+            "dyn": 0, 
+            "extendNew": 10, 
+            "extendRev": 50, 
+            "media_files": [], 
+            "name": "Security", 
+            "notes": []
+        }, 
+        {
+            "__type__": "Deck", 
+            "children": [
+                {
+                    "__type__": "Deck", 
+                    "children": [], 
+                    "crowdanki_uuid": "d96d9493-a0cc-11e8-84fc-f0038c751458", 
+                    "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+                    "desc": "", 
+                    "dyn": 0, 
+                    "extendNew": 10, 
+                    "extendRev": 50, 
+                    "media_files": [], 
+                    "name": "Recap JavaScript", 
+                    "notes": [
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Hvad gør filter metoden?", 
+                                "<div>Løber gennem arrayet.&nbsp;Hvis boolean er true returner den et nyt array med true værdierne.</div>"
+                            ], 
+                            "flags": 0, 
+                            "guid": "ISNC$#M,l$", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Hvornår bruges filter metoden?", 
+                                "Når du skal bruge flere elementer fra et array."
+                            ], 
+                            "flags": 0, 
+                            "guid": "qdM7_DQ|p!", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Hvad ændrer filter metoden ikke?", 
+                                "Det originale array."
+                            ], 
+                            "flags": 0, 
+                            "guid": "CE4XxXNx6G", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Virker filter uden værdier?", 
+                                "Nej, filter metoden udfører ikke funktionen for array elementer uden værdier."
+                            ], 
+                            "flags": 0, 
+                            "guid": "g3=,F3+!^m", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Vis et kode eksempel med filter.", 
+                                "<div>var names = [\"Lars\", \"Jan\", \"Peter\", \"Bo\", \"Frederik\", \"Allan\", \"Ib\"];</div><div><br /></div><div>var lessThanThree = names.filter(function(name) {</div><div>&nbsp; &nbsp; return name.length &lt;= 3;</div><div>});</div><div><br /></div><div>console.log(lessThanThree);</div>"
+                            ], 
+                            "flags": 0, 
+                            "guid": "vm3NGDkCo)", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Hvad gør map metoden?", 
+                                "Løber arrayet igennem, og returner et nyt array af samme størrelse, hvor der er tilføjet noget til elementerne."
+                            ], 
+                            "flags": 0, 
+                            "guid": "c?F:JiJ,m*", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Hvornår bruges map metoden?", 
+                                "Map metoden bruges når du vil ændrer elementerne i et array."
+                            ], 
+                            "flags": 0, 
+                            "guid": "ksKhH}NI5f", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Hvordan virker map metoden?", 
+                                "Map metoden viker ved at den tilføjede funktion kalder, hvert element i arrayet, tilføjer noget og det sker i rækkefølge."
+                            ], 
+                            "flags": 0, 
+                            "guid": "b<b&4WMwh+", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Hvis du bruger map metoden på et tomt array virker det så?", 
+                                "Nej, det skal have værdier."
+                            ], 
+                            "flags": 0, 
+                            "guid": "v}&wd(O~#y", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Ændrer map metoden det originale array?", 
+                                "Nej, det originale array ændres ikke."
+                            ], 
+                            "flags": 0, 
+                            "guid": "zr9!b$R{AS", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }, 
+                        {
+                            "__type__": "Note", 
+                            "data": "", 
+                            "fields": [
+                                "Vis et eksempel på en map metode?", 
+                                "<div>var names = [\"Lars\", \"Jan\", \"Peter\", \"Bo\", \"Frederik\", \"Allan\", \"Ib\"];</div><div><br /></div><div>var uppercasedNames = names.map(function(uppercasedName) {</div><div>&nbsp; &nbsp; return uppercasedName.toUpperCase();</div><div>});</div><div><br /></div><div>console.log(uppercasedNames);</div>"
+                            ], 
+                            "flags": 0, 
+                            "guid": "tm>l^Yxq@a", 
+                            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+                            "tags": [
+                                "js"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "crowdanki_uuid": "d96d948f-a0cc-11e8-a850-f0038c751458", 
+            "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+            "desc": "", 
+            "dyn": 0, 
+            "extendNew": 10, 
+            "extendRev": 50, 
+            "media_files": [], 
+            "name": "Fullstack JavaScript", 
+            "notes": []
+        }, 
+        {
+            "__type__": "Deck", 
+            "children": [], 
+            "crowdanki_uuid": "d96dbbaf-a0cc-11e8-bf46-f0038c751458", 
+            "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+            "desc": "", 
+            "dyn": 0, 
+            "extendNew": 10, 
+            "extendRev": 50, 
+            "media_files": [], 
+            "name": "Python", 
+            "notes": []
+        }
+    ], 
+    "crowdanki_uuid": "d96d6d80-a0cc-11e8-9e86-f0038c751458", 
+    "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 0, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Default", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 20, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 36500, 
+                "minSpace": 1, 
+                "perDay": 200
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "name": "4. Semester", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [
+                "js"
+            ], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }
+    ], 
+    "notes": []
+}
