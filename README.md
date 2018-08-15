@@ -1,5 +1,5 @@
-# Anki_Exam_Prep_Semester3
-Anki flashcards for coding examination 3. semester
+# Anki_Exam_Prep_Semester4
+Anki flashcards for examination 4. semester
 
 # Import a Deck
 1. Install CrowdAnki comprehensive JSON representation to facilitate collaboration from https://ankiweb.net/shared/info/1788670778
