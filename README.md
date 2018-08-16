@@ -7,6 +7,7 @@ Anki flashcards for examination 4. semester
 3. Go to File. Choose CrowAnki: Import from disk and choose the folder with the deck you want.
 
 # Export a deck to your git repository
+If you make new cards on several decks it's not possible to export all the decks the same time. You have to export each deck.
 1. Go to File. Choose Export. 
 2. Export format should be: CrowdAnki Json representation.
 3. Choose the deck you want to export.
