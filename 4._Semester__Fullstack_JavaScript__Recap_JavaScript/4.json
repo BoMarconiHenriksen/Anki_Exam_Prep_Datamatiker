@@ -1,7 +1,7 @@
 {
     "__type__": "Deck", 
     "children": [], 
-    "crowdanki_uuid": "39b3a100-a235-11e8-a1c8-f0038c751458", 
+    "crowdanki_uuid": "ec343a40-a507-11e8-b96a-f0038c751458", 
     "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
     "deck_configurations": [
         {
@@ -159,7 +159,7 @@
             "data": "", 
             "fields": [
                 "Virker filter uden værdier?", 
-                "Nej, filter metoden udfører ikke funktionen for array elementerne uden værdier."
+                "Nej, filter metoden udfører ikke callbacken uden værdier."
             ], 
             "flags": 0, 
             "guid": "g3=,F3+!^m", 
@@ -215,7 +215,7 @@
             "data": "", 
             "fields": [
                 "Hvordan virker map metoden?", 
-                "Map metoden viker ved at den tilføjede funktion kalder, hvert element i arrayet, tilføjer noget og det sker i rækkefølge."
+                "Map metoden viker ved, at callbacken kalder, hvert element i arrayet, tilføjer noget og det sker i rækkefølge."
             ], 
             "flags": 0, 
             "guid": "b<b&4WMwh+", 
@@ -285,7 +285,7 @@
             "data": "", 
             "fields": [
                 "Hvad sker, hvis en funktion bliver hoistet?", 
-                "<div>Der kommer en uncaught type error, da deklarationen(var f2) flyttes op i toppen, og</div><div>den tager ikke funktionen med. ( var f2 = function () )</div>"
+                "<div>Der kommer en uncaught type error, da deklarationen(var f2) flyttes op i toppen, og</div><div>den tager ikke initialiseringen med. ( var f2 = function () )</div>"
             ], 
             "flags": 0, 
             "guid": "ycbM0b)k09", 
@@ -695,6 +695,128 @@
             ], 
             "flags": 0, 
             "guid": "d],?W|PJwn", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilket keyword bruges til at slette en property i et objekt?", 
+                "Delete."
+            ], 
+            "flags": 0, 
+            "guid": "f<aC*)y;:O", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at teste om et objekt har en bestemt property?", 
+                "ja, ved hjælp at hasOwnProperty()."
+            ], 
+            "flags": 0, 
+            "guid": "f_MtHa0sIq", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Når vi bruger en konstruktør i javascript, hvilket keyword kan vi bruge til at lave en ny instance af objektet?", 
+                "new."
+            ], 
+            "flags": 0, 
+            "guid": "rWJ&65<9H4", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad bruges this til når vi har lavet en konstruktør?", 
+                "Vi bruger this til at tildele værdier til objektets properties baseret på de værdier, der blev passed til funktionen."
+            ], 
+            "flags": 0, 
+            "guid": "x&wP>2^;x|", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad bruges join metoden til?", 
+                "join metoden bruges til at sammensætte en string af alle elementerne fra et array."
+            ], 
+            "flags": 0, 
+            "guid": "M08K3bxSy*", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør reduce metoden?", 
+                "reduce metoden tilfører en funktion mod en akkumulator, og hver element i arrayet(fra venstre til højre) reduceres til en enkel værdi.<div><br /></div><div>Eks.</div><div><br /></div><div><div>let numbers = [2, 3, 67, 33];</div><div><br /></div><div>function getSum(total, num) { //Retur værdien gemmes i en akkumulator som her er total</div><div>&nbsp; &nbsp; return total + num;</div><div>};</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "fhz3.rDG.2", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Nævn 2 eksempler som reduce metoden kan bruges til?", 
+                "Lægge alle tal sammen i et array.<div>Tælle antallet af de samme elementer i et array.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "dKy;{ra`$Z", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er en callback(Den enkle forklaring)?", 
+                "En callback er en funktion, som bliver udført når(efter) en anden funktion er færdig - derfor navnet call back."
+            ], 
+            "flags": 0, 
+            "guid": "RjcOW9^e[d", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er en callback(den komplekse forklaring)?", 
+                "<div>I javascript er funktioner objekter.&nbsp;</div><div>Derfor kan funktioner tage funktioner som argumenter,&nbsp;</div><div>og kan blive returneret af andre funktioner.&nbsp;</div><div>Funktioner, der gør det kaldes higher-order functions.&nbsp;</div><div>Alle funktioner, der bliver passed som et argument bliver kaldt callback funktioner.</div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "caY$/$E5H=", 
             "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
             "tags": [
                 "js"
