@@ -1,7 +1,11 @@
 {
     "__type__": "Deck", 
     "children": [], 
+<<<<<<< HEAD
     "crowdanki_uuid": "dfe3b680-a93a-11e8-a66c-f0038c751458", 
+=======
+    "crowdanki_uuid": "39b3a100-a235-11e8-a1c8-f0038c751458", 
+>>>>>>> d98187042758b7467d4b94a39b47ba53037ced28
     "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
     "deck_configurations": [
         {
@@ -94,7 +98,11 @@
             ], 
             "sortf": 0, 
             "tags": [
+<<<<<<< HEAD
                 "node"
+=======
+                "js"
+>>>>>>> d98187042758b7467d4b94a39b47ba53037ced28
             ], 
             "tmpls": [
                 {
@@ -159,7 +167,11 @@
             "data": "", 
             "fields": [
                 "Virker filter uden værdier?", 
+<<<<<<< HEAD
                 "Nej, filter metoden udfører ikke callbacken uden værdier."
+=======
+                "Nej, filter metoden udfører ikke funktionen for array elementerne uden værdier."
+>>>>>>> d98187042758b7467d4b94a39b47ba53037ced28
             ], 
             "flags": 0, 
             "guid": "g3=,F3+!^m", 
@@ -215,7 +227,11 @@
             "data": "", 
             "fields": [
                 "Hvordan virker map metoden?", 
+<<<<<<< HEAD
                 "Map metoden viker ved, at callbacken kalder, hvert element i arrayet, tilføjer noget og returner det i et nyt array. Det sker i rækkefølge."
+=======
+                "Map metoden viker ved at den tilføjede funktion kalder, hvert element i arrayet, tilføjer noget og det sker i rækkefølge."
+>>>>>>> d98187042758b7467d4b94a39b47ba53037ced28
             ], 
             "flags": 0, 
             "guid": "b<b&4WMwh+", 
@@ -285,7 +301,11 @@
             "data": "", 
             "fields": [
                 "Hvad sker, hvis en funktion bliver hoistet?", 
+<<<<<<< HEAD
                 "<div>Der kommer en uncaught type error, da deklarationen(var f2) flyttes op i toppen, og</div><div>den tager ikke initialiseringen med. ( var f2 = function () )</div>"
+=======
+                "<div>Der kommer en uncaught type error, da deklarationen(var f2) flyttes op i toppen, og</div><div>den tager ikke funktionen med. ( var f2 = function () )</div>"
+>>>>>>> d98187042758b7467d4b94a39b47ba53037ced28
             ], 
             "flags": 0, 
             "guid": "ycbM0b)k09", 
@@ -699,6 +719,7 @@
             "tags": [
                 "js"
             ]
+<<<<<<< HEAD
         }, 
         {
             "__type__": "Note", 
@@ -821,6 +842,8 @@
             "tags": [
                 "js"
             ]
+=======
+>>>>>>> d98187042758b7467d4b94a39b47ba53037ced28
         }
     ]
 }

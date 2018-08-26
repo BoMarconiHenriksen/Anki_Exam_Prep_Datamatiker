@@ -54,8 +54,7 @@
     "extendNew": 10, 
     "extendRev": 50, 
     "media_files": [], 
-    "name": "3. semester - Programeringseksamen", 
-
+    "name": "3. Semester::3. semester - Programeringseksamen", 
     "note_models": [
         {
             "__type__": "NoteModel", 
@@ -95,7 +94,7 @@
             ], 
             "sortf": 0, 
             "tags": [
-                "tråde"
+                "js"
             ], 
             "tmpls": [
                 {
@@ -1918,5 +1917,4 @@
             ]
         }
     ]
-
 }

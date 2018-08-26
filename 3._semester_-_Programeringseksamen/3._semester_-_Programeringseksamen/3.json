@@ -1,13 +1,13 @@
 {
     "__type__": "Deck", 
     "children": [], 
-    "crowdanki_uuid": "6141e8b0-66a0-11e8-bf86-94e9793d2471", 
-    "deck_config_uuid": "6141e8b1-66a0-11e8-9125-94e9793d2471", 
+    "crowdanki_uuid": "5d8b7100-664b-11e8-b33e-f0038c751458", 
+    "deck_config_uuid": "5d8b7101-664b-11e8-b768-f0038c751458", 
     "deck_configurations": [
         {
             "__type__": "DeckConfig", 
             "autoplay": true, 
-            "crowdanki_uuid": "6141e8b1-66a0-11e8-9125-94e9793d2471", 
+            "crowdanki_uuid": "5d8b7101-664b-11e8-b768-f0038c751458", 
             "dyn": false, 
             "lapse": {
                 "delays": [
@@ -29,7 +29,7 @@
                 "initialFactor": 2500, 
                 "ints": [
                     1, 
-                    1, 
+                    2, 
                     7
                 ], 
                 "order": 1, 
@@ -55,7 +55,6 @@
     "extendRev": 50, 
     "media_files": [], 
     "name": "3. semester - Programeringseksamen", 
-
     "note_models": [
         {
             "__type__": "NoteModel", 
@@ -83,7 +82,7 @@
             ], 
             "latexPost": "\\end{document}", 
             "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
-            "name": "Basic", 
+            "name": "Basic-0ee58", 
             "req": [
                 [
                     0, 
@@ -95,7 +94,7 @@
             ], 
             "sortf": 0, 
             "tags": [
-                "tråde"
+                "Rest"
             ], 
             "tmpls": [
                 {
@@ -148,7 +147,7 @@
             "data": "", 
             "fields": [
                 "Hvad betyder lifting state up?", 
-                "Data flyder en vej(ovenfra og ned) - normalt bruges Redux eller Mobx."
+                "Ofte har flere komponenter brug for at vise de samme data, som er blevet ændret. Det gøres ved at løfte state op til tætteste fælles forældre/komponent(ancestor)."
             ], 
             "flags": 0, 
             "guid": "fCYlDL_f;%", 
@@ -456,7 +455,7 @@
             "data": "", 
             "fields": [
                 "Hvad er single source of truth?", 
-                "Det er når en komponent, der render en form også kontroller, hvad der sker i formen ved bruger input."
+                "Det er når en komponent, der render en form også kontroller, hvad der sker i formen ved bruger input.&nbsp;<div><br /></div><div>1. Som udgangspunkt render input felter DOM(uncontrolled).</div><div>2. Få input feletet til at lytte til state(controlled).</div><div><br /><div>Forklaring:</div><div>Som udgangspunkt når du vil implementer single source of truth så skal du lave input felterne controlled.</div><div><br /></div><div>Som udgangspunkt er input felterne ikke controlled dvs de vil render data fra DOM, ikke state.</div><div><br /></div><div>Hvis du får input feltet til at lytte til state i stedet( gør den controllable), så vil den ikke være i stand til at ændre sin værdi medmindre du ændrer state.</div><div><br /></div><div>Derfor tilføjes en onChange metode, der ændrer state, og gør den til en fuld controllable komponent, som kun lytter til \"one source of truth\", nemlig state, i stedet for DOM.</div></div>"
             ], 
             "flags": 0, 
             "guid": "dMa&`A8Y%#", 
@@ -484,7 +483,7 @@
             "data": "", 
             "fields": [
                 "Hvad er 2 way binding?", 
-                "Det som skrives i et input felt afspejles i state dvs render kaldes og opdater."
+                "Det som skrives i et input felt afspejles i state dvs render kaldes og opdater. Dvs f.eks. kan vi så få brugens input vist i en anden komponent."
             ], 
             "flags": 0, 
             "guid": "olSl4Z_#Br", 
@@ -498,7 +497,7 @@
             "data": "", 
             "fields": [
                 "Hvad kan 2 ways binding bruges til?", 
-                "Det kan bl.a. bruges til debug."
+                "Det kan bl.a. bruges til debug, og til at vise brugerens input i et andet komponent."
             ], 
             "flags": 0, 
             "guid": "u*joL>;Tns", 
@@ -1918,5 +1917,4 @@
             ]
         }
     ]
-
 }
