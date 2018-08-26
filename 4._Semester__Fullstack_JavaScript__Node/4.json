@@ -1,0 +1,802 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "d12db0f0-a93a-11e8-989f-f0038c751458", 
+    "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 0, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Default", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 20, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 36500, 
+                "minSpace": 1, 
+                "perDay": 200
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "name": "4. Semester::Fullstack JavaScript::Node", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [
+                "node"
+            ], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Gennem hvilket objekt kan du få adgang til command-line arguments?", 
+                "Du kan få adgang til command-line arguments via det globale process objekt."
+            ], 
+            "flags": 0, 
+            "guid": "m5eOM,7{Kh", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilken property har det globale process objekt?", 
+                "Det globale process objekt har en argv property."
+            ], 
+            "flags": 0, 
+            "guid": "iCNSrf|d6-", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilken type er argv(det globale process objekts property)?", 
+                "Det er et array."
+            ], 
+            "flags": 0, 
+            "guid": "v*5Z&AxLHG", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad indeholder argv(det globale process objektes property)?", 
+                "argv indeholder hele command-linen.<div>Eks.</div><div>console.log(process.argv);</div>"
+            ], 
+            "flags": 0, 
+            "guid": "E=[Z)DmvO*", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad indeholder det første element i process.argv?", 
+                "node."
+            ], 
+            "flags": 0, 
+            "guid": "t;T,;wpG4H", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad indeholder det andet element i process.argv?", 
+                "Det indeholder stien til det program du vil køre."
+            ], 
+            "flags": 0, 
+            "guid": "H=pu14_vXC", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Når du skal arbejde med process.argv, hvilket index nummer skal du så altid starte med?", 
+                "Du skal starte med index nummer 2(det tredje element)."
+            ], 
+            "flags": 0, 
+            "guid": "xQiB_g~(^3", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad skal man være opmærksom på, når man arbejder med process.argv?", 
+                "Alle elementerne er strings."
+            ], 
+            "flags": 0, 
+            "guid": "P2L^.?or(Y", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Når du arbejder med process.argv, hvordan konventer du strings til integers?", 
+                "Du kan bruge + eller Number().<div>Eks.</div><div>+process.argv[2]</div><div>Number(process.argv[2])</div>"
+            ], 
+            "flags": 0, 
+            "guid": "Nx4~Iy[}[/", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilket modul skal du bruge for at udfører en filesystem operation?", 
+                "Du skal bruge fs modulet fra Node core library."
+            ], 
+            "flags": 0, 
+            "guid": "GfkInyA_(d", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan loades filesystem modulet(fs)?", 
+                "var fs = require('fs');"
+            ], 
+            "flags": 0, 
+            "guid": "Keek+:i3FC", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad ender alle synchronous(eller blocking) filesystem metoder med i fs modulet?", 
+                "De ender med Sync.<div><br /><div>Eks. for at læse en fil:</div><div>fs.readFileSync('/path/to/file')</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "mLko|@$`=>", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad returner&nbsp;fs.readFileSync('/path/to/file')", 
+                "Et buffer objekt, med hele indeholdet af filen."
+            ], 
+            "flags": 0, 
+            "guid": "n`rJwj*xD%", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er buffer objektet?", 
+                "Det er nodes måde at representer arrays af data. Det kan være acsii, binary eller andre formater."
+            ], 
+            "flags": 0, 
+            "guid": "Mc:g85d|ym", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan konverters buffer objekter til en string?", 
+                "Kald toString()<div><br /></div><div>Eks.</div><div>var str = buf.toString()</div>"
+            ], 
+            "flags": 0, 
+            "guid": "PERXePDG}I", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilken metode bruges for at læse en asynkron I/O fil?", 
+                "fs.readFile()"
+            ], 
+            "flags": 0, 
+            "guid": "GG=0370Hy+", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan får du værdien fra et asynkront kald i node?", 
+                "Ved hjælp af en callback.<div><br /></div><div>Eks. Hvis det skal returners som buffer:</div><div>function callback(err, data) { }</div><div><br /></div><div>Eks. Hvis det skal returners som string:</div><div>function callback(err, utf8, data) { }</div>"
+            ], 
+            "flags": 0, 
+            "guid": "F~@*:Krb6j", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvorfor passes err ind ved en asynkron callback?", 
+                "For at tjekke om det første argument er sandt."
+            ], 
+            "flags": 0, 
+            "guid": "J55=dbhvoi", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Findes der et module i node, hvor man kan finde en fils extension?", 
+                "Ja, path modulet."
+            ], 
+            "flags": 0, 
+            "guid": "cr=W|1#O^Q", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kaldes den fil som kalder moduler?", 
+                "main.js eller index.js."
+            ], 
+            "flags": 0, 
+            "guid": "eaA$L5E(BP", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad skriver du for at importer et module i Node?", 
+                "var mymodule = require('./mymodule.js') (.js behøves ikke)."
+            ], 
+            "flags": 0, 
+            "guid": "ECZ@}7dj@_", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Når du kalder et modul i main.js eller index.js. Hvad skal funktionen så hedde?", 
+                "Funktion skal hedde det samme som variablen, den er initialiseret med: require('./filtered'); (som henter modulet ind). Funktionen kalder modul funktionen.<div><br></div><div>Eks.</div><div><div>var filter = require('./filtered');</div><div>var dir = process.argv[2]</div><div>var filterStr = process.argv[3]</div><div><br></div><div>// filter() kalder modul funktionen. dir, filterStr og en callback passes som argumenter.</div><div>filter(dir, filterStr, function (err, list) { // filter er variablen som er initialiseret med require('./filtered');</div><div>&nbsp; if (err)</div><div>&nbsp; &nbsp; return console.error('There was an error:', err)</div><div><br></div><div>&nbsp; list.forEach(function (file) { // printer hvert element til consollen fra list variablen.</div><div>&nbsp; &nbsp; console.log(file)</div><div>&nbsp; })</div><div>})</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "A)q!FRN5Fi", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan eksporter du et modul i Node?", 
+                "module.exports = function (dir, filterStr, callback) { ... }"
+            ], 
+            "flags": 0, 
+            "guid": "p9fiu84r0X", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at eksporter et modul i Node som en named functioin?", 
+                "Ja."
+            ], 
+            "flags": 0, 
+            "guid": "EB{>/MMW[c", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er fordelen ved at du kan behandle Node Streams som objekter?", 
+                "De kan bruges som events."
+            ], 
+            "flags": 0, 
+            "guid": "br$30QLLp1", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan laver du en event listener i Node?", 
+                "response.on(\"data\", function (data) { /* ... */ })"
+            ], 
+            "flags": 0, 
+            "guid": "s0A3b3+YAx", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilke 3 events har størst interesse i Node?", 
+                "\"data\", \"error\" og \"end\"."
+            ], 
+            "flags": 0, 
+            "guid": "MH%Ax!7J`G", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør&nbsp;response.setEncoding('utf8')?", 
+                "\"data\" events modtages som string i stedet for et node buffer objekt(dog kan node buffer konveteres til en string med tooString()."
+            ], 
+            "flags": 0, 
+            "guid": "qn[Il4s2AW", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilket modul bruges til at lave en http klient?", 
+                "<div>var http = require('http'); eller</div><div>var https = require('https');</div>"
+            ], 
+            "flags": 0, 
+            "guid": "EG+xLaUE~2", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilke 2 npm moduler kan vi bruge til at hente al data fra vores response?", 
+                "For at hente al data fra vores response kan vi bruge npm modulerne bl eller concat-stream."
+            ], 
+            "flags": 0, 
+            "guid": "o5ET5(t$1!", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad sker der med responset fra get requstet når vi bruger npm modulet bl til at hente al data fra vores request?", 
+                "responset fra get requesten bliver piped til bl metoden vha .pipe.<br /><div><br /></div><div><div>var http = require('http');</div><div>var bl = require('bl');</div><div>&nbsp;</div><div>http.get(process.argv[2], function (response) {</div><div>&nbsp; response.pipe(bl(function (err, data) { // responset fra get requesten bliver piped til bl metoden vha .pipe metoden.</div><div>&nbsp; &nbsp; if (err)</div><div>&nbsp; &nbsp; &nbsp; return console.error(err)</div><div>&nbsp; &nbsp; data = data.toString() // Konventer buffer objektet til en string.</div><div>&nbsp; &nbsp; console.log(data.length) // Antallet af characters fra vores response.</div><div>&nbsp; &nbsp; console.log(data) // console log response.</div><div>&nbsp; }))</div><div>})</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "C*hU!e$l=q", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan skrives en get request i Node?", 
+                "http.get() eller https.get()"
+            ], 
+            "flags": 0, 
+            "guid": "l-5mI4-h;g", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan får du den rigtige rækkefølge, når du fetcher flere filer i Node?", 
+                "Ved at tælle callbacks."
+            ], 
+            "flags": 0, 
+            "guid": "Q$2dC`j2VG", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad står TCP for?", 
+                "Transmission Control Protecol."
+            ], 
+            "flags": 0, 
+            "guid": "A(DuQap!}", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvis du skal lave en TCP server(der er ikke HTTP involeret), hvilket modul skal du så bruge?", 
+                "net modulet. var net = require('net');"
+            ], 
+            "flags": 0, 
+            "guid": "QMb`^`p[<N", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan laves en node TCP server?", 
+                "var server = net.createServer(function(socket) {...}"
+            ], 
+            "flags": 0, 
+            "guid": "ixKfoskD5W", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad skal du kalde for at få en TCP server til at lytte til en bestemt port?", 
+                "server.listen(portNummer);"
+            ], 
+            "flags": 0, 
+            "guid": "i$>T_=f{[1", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad indeholder socket objektet?", 
+                "Meta data om forbindelsen(connection)."
+            ], 
+            "flags": 0, 
+            "guid": "uQU0`!h<7k", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er socket objektet også?", 
+                "Socket objektet er også en Node duplex Stream."
+            ], 
+            "flags": 0, 
+            "guid": "p<L@<w}t72", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad betyder det at socket objektet også er en Node duplex Stream?", 
+                "Det betyder at der kan læses fra det og skrives til det - socket.write(data)"
+            ], 
+            "flags": 0, 
+            "guid": "t^lBC5S{Eb", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan lukker man en socket?", 
+                "Kald metoden socket.end(data)"
+            ], 
+            "flags": 0, 
+            "guid": "t3#h0I>r^G", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør fs.createReadStream()?", 
+                "Den streamer fil indholdet til vores servers response."
+            ], 
+            "flags": 0, 
+            "guid": "Bx$%+:m9Ds", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er forskellen på fs.readFile() og fs.createReadStream()?", 
+                "fs.readFile() læser hele filen til memory før den sender response, imens fs.createReadStream() streamer indholdet af filen til responset mens den læser det. Det kan være hurtigere i nogen tilfælde og bruge mindre hukommelse."
+            ], 
+            "flags": 0, 
+            "guid": "xj+K)1$@|o", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at forbinde en file system stream med en response stream?", 
+                "Ja, ved hjælp af pipe metoden. Source er indholdet af filen, og destination er responset.<div><br /></div><div>source.pipe(destination);</div>"
+            ], 
+            "flags": 0, 
+            "guid": "wB<Qz|/>`/", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad bliver request brugt til i Node?", 
+                "Til at fetch properties som header og query-string fra requestet."
+            ], 
+            "flags": 0, 
+            "guid": "ir~1V;91PW", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad bruges response til i Node?", 
+                "response bruges til at sende data til klienten både headers og body."
+            ], 
+            "flags": 0, 
+            "guid": "vHV$BP7,L<", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er request og response også i Node?", 
+                "De er begge Node Streams. Du kan bruge streaming metoderne til at sende og modtage data."
+            ], 
+            "flags": 0, 
+            "guid": "Q;@!LWh+zU", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør node modulet through-map?", 
+                "Det virker lidt ligesom map(). Det er muligt at ændre stream. Den tager bidder af data ad gangen."
+            ], 
+            "flags": 0, 
+            "guid": "cP/vJ4Libt", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kan Nodes url modul bruges til?", 
+                "Det kan bruges til at parseindholdet af request.url, og give diget objekt med værdifulde properties.<div><br /></div><div><div>http.createServer(function (request, response) {</div><div>&nbsp; if (request.method === 'GET') { //Hvis request metoden fra urlen som er sendt til min server er ligmed GET</div><div>&nbsp; &nbsp; response.writeHead(200, {'Content-Type': 'application/json'}) // så skrives status 200 og content type application/json.</div><div>&nbsp; &nbsp; url = url.parse(request.url, true) // Her parses værdien af request.url med url.parse og assigner den til en ny variabel url.</div><div>&nbsp; &nbsp; response.end(JSON.stringify(parseQuery(url))) // url bliver så stringifyet til et json objekt</div><div>&nbsp; } else { // Hvis request metoden ikke er GET så skrives status 405 til request head og lukker responset.</div><div>&nbsp; &nbsp; response.writeHead(405)</div><div>&nbsp; &nbsp; response.end()</div><div>&nbsp; }</div><div>}).listen(+port, function () {</div><div>&nbsp; console.log('Server listening on http://localhost:%s', port)</div><div>});</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "HK4KE$*>DD", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "node"
+            ]
+        }
+    ]
+}

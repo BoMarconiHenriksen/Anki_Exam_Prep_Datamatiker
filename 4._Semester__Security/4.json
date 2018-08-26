@@ -1,0 +1,200 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "d96d6d84-a0cc-11e8-b78e-f0038c751458", 
+    "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 0, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Default", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 20, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 36500, 
+                "minSpace": 1, 
+                "perDay": 200
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 50, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "name": "4. Semester::Security", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [
+                "node"
+            ], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan et system blive 100% sikkert?", 
+                "Nej."
+            ], 
+            "flags": 0, 
+            "guid": "h/u.i*GILJ", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "security"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilke aspekter findes der inden for sikkerhed?", 
+                "Prevention(Forebygge), Detection(Overvåge), Response/Recovery(Lukke hullet/Genskabe data)."
+            ], 
+            "flags": 0, 
+            "guid": "poHK(Y-$?.", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "security"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er prevention(forbygge)?", 
+                "Hvad kan der gøres sikkerhedsmæssigt for at sikre et system. Det er vigtigt at finde en balance, så det ikke bliver svært for brugerne at bruge systemet."
+            ], 
+            "flags": 0, 
+            "guid": "F7C{Fq6_lh", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "security"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er Detection(Overvåge)?", 
+                "Hvad har vi af muligheder for at opdage, at vi bliver angrebet/hacket som f.eks. logging, monetering, ændring af filer(systemfiler)."
+            ], 
+            "flags": 0, 
+            "guid": "CdGx@kx2NJ", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "security"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er response/recovery?", 
+                "Hvor hurtigt kan vi lukke hullet, og hvor hurtigt kan vi genskabe data for at komme tilbage på sporet."
+            ], 
+            "flags": 0, 
+            "guid": "p#_;/%u[=B", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "security"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er forskellen på prevention, detection og response/recovery i systemer du udvikler?", 
+                "Forskellen er at du tænker i sikkerhed i forskellige stadier ifh til dit system. Hvilken sikkerhed har systemet? Hvordan kan vi opdage trusler? Og hvor hurtigt kan vi håndter angreb ifh at lukke hullet og genskabe data."
+            ], 
+            "flags": 0, 
+            "guid": "i4j#;vqrx,", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "security"
+            ]
+        }
+    ]
+}

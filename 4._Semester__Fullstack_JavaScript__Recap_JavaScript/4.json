@@ -1,0 +1,826 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "dfe3b680-a93a-11e8-a66c-f0038c751458", 
+    "deck_config_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "f27b75a2-8444-11e8-afb0-f0038c751458", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 0, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Default", 
+            "new": {
+                "bury": false, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2500, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 20, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": false, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 36500, 
+                "minSpace": 1, 
+                "perDay": 200
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "name": "4. Semester::Fullstack JavaScript::Recap JavaScript", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Front", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Back", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Basic", 
+            "req": [
+                [
+                    0, 
+                    "all", 
+                    [
+                        0
+                    ]
+                ]
+            ], 
+            "sortf": 0, 
+            "tags": [
+                "node"
+            ], 
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Card 1", 
+                    "ord": 0, 
+                    "qfmt": "{{Front}}"
+                }
+            ], 
+            "type": 0, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør filter metoden?", 
+                "<div>Løber gennem arrayet.&nbsp;Hvis boolean er true returner den et nyt array med true værdierne.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "ISNC$#M,l$", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvornår bruges filter metoden?", 
+                "Når du skal bruge flere bestemt elementer fra et array."
+            ], 
+            "flags": 0, 
+            "guid": "qdM7_DQ|p!", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad ændrer filter metoden ikke?", 
+                "Det originale array."
+            ], 
+            "flags": 0, 
+            "guid": "CE4XxXNx6G", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Virker filter uden værdier?", 
+                "Nej, filter metoden udfører ikke callbacken uden værdier."
+            ], 
+            "flags": 0, 
+            "guid": "g3=,F3+!^m", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Vis et kode eksempel med filter.", 
+                "<div>var names = [\"Lars\", \"Jan\", \"Peter\", \"Bo\", \"Frederik\", \"Allan\", \"Ib\"];</div><div><br /></div><div>var lessThanThree = names.filter(function(name) {</div><div>&nbsp; &nbsp; return name.length &lt;= 3;</div><div>});</div><div><br /></div><div>console.log(lessThanThree);</div>"
+            ], 
+            "flags": 0, 
+            "guid": "vm3NGDkCo)", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør map metoden?", 
+                "Løber arrayet igennem, og returner et nyt array af samme størrelse, hvor der er tilføjet noget til elementerne."
+            ], 
+            "flags": 0, 
+            "guid": "c?F:JiJ,m*", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvornår bruges map metoden?", 
+                "Map metoden bruges når du vil ændrer elementerne i et array."
+            ], 
+            "flags": 0, 
+            "guid": "ksKhH}NI5f", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvordan virker map metoden?", 
+                "Map metoden viker ved, at callbacken kalder, hvert element i arrayet, tilføjer noget og returner det i et nyt array. Det sker i rækkefølge."
+            ], 
+            "flags": 0, 
+            "guid": "b<b&4WMwh+", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvis du bruger map metoden på et tomt array virker det så?", 
+                "Nej, det skal have værdier."
+            ], 
+            "flags": 0, 
+            "guid": "v}&wd(O~#y", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Ændrer map metoden det originale array?", 
+                "Nej, det originale array ændres ikke."
+            ], 
+            "flags": 0, 
+            "guid": "zr9!b$R{AS", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Vis et eksempel på en map metode?", 
+                "<div>var names = [\"Lars\", \"Jan\", \"Peter\", \"Bo\", \"Frederik\", \"Allan\", \"Ib\"];</div><div><br /></div><div>var uppercasedNames = names.map(function(uppercasedName) {</div><div>&nbsp; &nbsp; return uppercasedName.toUpperCase();</div><div>});</div><div><br /></div><div>console.log(uppercasedNames);</div>"
+            ], 
+            "flags": 0, 
+            "guid": "tm>l^Yxq@a", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er hoisting?", 
+                "<div>Hoisting betyder at deklaringen af variabler, lige meget hvor i filen den bliver deklaret,&nbsp;</div><div>bliver flyttet op i toppen af dokumentet.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "Ofj71g?B!S", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad sker, hvis en funktion bliver hoistet?", 
+                "<div>Der kommer en uncaught type error, da deklarationen(var f2) flyttes op i toppen, og</div><div>den tager ikke initialiseringen med. ( var f2 = function () )</div>"
+            ], 
+            "flags": 0, 
+            "guid": "ycbM0b)k09", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilket problem kan opstå ved hoisting når en variabel deklares og initieres længere nede i koden?", 
+                "<div>Variablen er undefined.</div><div>Det sker fordi det kun er deklarationen, der bliver flyttet op. Initialisering bliver nede.</div><div><br /></div><div><div>var x = 5;</div><div>console.log(\"x er \" + x + \" y er \" + y);</div><div>var y = 7;</div></div><div><br /></div><div>y er undefined.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "L.}i4y=a1Q", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er forskellen på var og let?", 
+                "<div>var er global og let har et begærnset scope.&nbsp;</div>"
+            ], 
+            "flags": 0, 
+            "guid": "qqXC`:KpxY", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvornår kan det være en fordel at bruge let?", 
+                "Det kan være en fordel at bruge let i en metode eller i nestet if statements, hvor&nbsp;variablen ikke må være global."
+            ], 
+            "flags": 0, 
+            "guid": "f!|*VDp?=a", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er der variabler, som ikke hoistes?", 
+                "Ja, let og const, da de virker inden for deres blok scope."
+            ], 
+            "flags": 0, 
+            "guid": "M#jjO,EXHs", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør call()?", 
+                "Metoden kalder en funktion med en given this værdi og argumenter stillet til rådighed individuelt."
+            ], 
+            "flags": 0, 
+            "guid": "ii;E;7%Zs%", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør apply()?", 
+                "Metoden kalder en funktion med en given this værdi og argumenter stillet til rådighed som et array."
+            ], 
+            "flags": 0, 
+            "guid": "u2}l+k<~?x", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er forskellen på call() og apply()?", 
+                "Forskellen er at call() accepter en argument list og apply accepter et enkelt array af argumenter."
+            ], 
+            "flags": 0, 
+            "guid": "qL%FxGa:2a", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "I bind() hvad er this bundet til?", 
+                "<div>I den nye funktion er this permanent bundet til det første argument af bind,&nbsp;</div><div>lige meget, hvordan funktion bliver brugt.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "B9DME},%AZ", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad referer this til i en browser, når det er uden for en funktion?", 
+                "this referer til det globale objekt, som er window objektet."
+            ], 
+            "flags": 0, 
+            "guid": "uY1o]GjZtb", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad afhænger værdien af this i en funktion?", 
+                "Værdien af this i en funktion afhænger af, hvordan funktionen bliver kaldt."
+            ], 
+            "flags": 0, 
+            "guid": "dvxd=oW~Cv", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvis koden ikke er i strick mode, og værdien ikke er sat af kaldet, hvad referer this til?", 
+                "this referer til det globale objekt, som er window i en browser.<div><br /></div><div>Eks.</div><div><br /></div><div><div>function f1() {</div><div>&nbsp; &nbsp; return this;</div><div>}</div><div><br /></div><div>// In a browser:</div><div>f1() === window; // true&nbsp;</div><div><br /></div><div>// In Node:</div><div>f1() === global; // true</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "xgQ8i~>u7I", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad vil værdien af this være i strick mode?", 
+                "I strick mode vil værdien af this&nbsp;forblive det som den var sat til i det den blive ececuted."
+            ], 
+            "flags": 0, 
+            "guid": "L7~]n$D,ZG", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan et objekt passes som det første argument?", 
+                "Ja,&nbsp;et objekt kan passes som det første argument til call() eller apply() og så er this bundet til det."
+            ], 
+            "flags": 0, 
+            "guid": "Oaf*yNeC6X", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "(Opvarmning til IFFE). Hvordan ser en named function ud?", 
+                "<div>var fibo = function fibonacci() {</div><div>&nbsp; &nbsp; // Du kan bruge \"fibonacci()\" her, da funktionen har et navn.</div><div>};</div><div><br /></div><div>// fibonacci() her virker ikke, men fibo() virker.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "tZcm~?}^6*", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvor kan du kalde&nbsp;fibonacci() og fibo() i en named function?<div><br /></div><div><div>var fibo = function fibonacci() {</div><div>&nbsp; &nbsp;&nbsp;</div><div>};</div></div>", 
+                "<div>var fibo = function fibonacci() {</div><div>&nbsp; &nbsp; // you can use \"fibonacci()\" here as this funciton expression has a name.</div><div>};</div><div><br /></div><div>// fibonacci() here fails, but fibo() works.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "Q5)dXT,v%c", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "(Opvarmning til IFFE)<div>Hvordan ser en anonym funktion ud? Og hvorfor er den anonym?</div>", 
+                "<div>Funktioner er anonym, fordi den ikke har noget navn.</div><div><br /></div><div>var msg = \"Hello, World!\";</div><div>var sayHi = function() {</div><div>&nbsp; &nbsp; alert(msg);</div><div>};</div><div><br /></div><div>sayHi(); // shows \"Hello, World!\" as alert in browser.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "m~a#]kExGT", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad står IFFE for?", 
+                "Immediately-invoked Function Expression"
+            ], 
+            "flags": 0, 
+            "guid": "kQS6-ci@zv", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er IFFE?", 
+                "IFFE tager en funktion, gør den til en expression, og udfører den med det samme."
+            ], 
+            "flags": 0, 
+            "guid": "ms^IzHkOsU", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad skal man gøre for at en funktion bliver en IFFE?", 
+                "Foran funktionen skrives en af følgende tegn !, +, -, ~ eller void.<div><br /></div><div><div>!function() { // ! gør at javascript behandler det som kommer lige efter som en expression. Kan også bruge void, +, - eller ~.</div><div>&nbsp; &nbsp; console.log('Hello from IIFE!');</div><div>}();</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "mC)r!OY^FJ", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan IFFE laves som en anonym funktion?", 
+                "Ja, en IFFE kan laves som en anonym funktion."
+            ], 
+            "flags": 0, 
+            "guid": "jZC)dZ]+tP", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan en IFFE laves som en almindelig funktion(med navn)?", 
+                "Ja, en IFFE kan laves som en almindlig funktion med navn."
+            ], 
+            "flags": 0, 
+            "guid": "k*2}BOS+W6", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan IFFE laves med parenteser?", 
+                "Ja, der er 2 varianter.<div><br /></div><div><div>// Variation 1</div><div>(function() {</div><div>&nbsp; &nbsp; console.log('Hello from IIFE!');</div><div>}());</div><div><br /></div><div>// Variation 2</div><div>(function() {</div><div>&nbsp; &nbsp; console.log('I am an IIFE, too!');</div><div>})();</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "z$rTsJ=`Ww", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad kan man bruge IFFE til?", 
+                "IFFE kan bruges til at lave private variabler og funktioner dvs afgrænse scopet."
+            ], 
+            "flags": 0, 
+            "guid": "mfDHm[z2<]", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan man få adgang til de private variabler og funktioner i en IFFE?", 
+                "Ja, ved hjælp af closure."
+            ], 
+            "flags": 0, 
+            "guid": "LS:Dz;OQ:y", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Kan IFFE returner en værdi?", 
+                "Ja, hvis du assigner en variable til den.<div><br /></div><div><div>var result = (function() {</div><div>&nbsp; &nbsp; return \"From IIFE\";</div><div>}());</div><div><br /></div><div>console.log(result);</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "O6Aa--:),U", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilken klassisk module pattern findes der som både benytter IFFE og closure?", 
+                "Der findes et som laver et singleton objekt, med private variabler og funktioner.<div><br /></div><div><div>var Sequence = (function sequenceIIFE() {</div><div>&nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; // Private variable to store current counter value.</div><div>&nbsp; &nbsp; var current = 0;</div><div>&nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; // Object that's returned from the IIFE.</div><div>&nbsp; &nbsp; return {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; getCurrentValue: function() { //objekt, der returner værdien i current.</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return current;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; },</div><div>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; getNextValue: function() { //incrementer værdien i current.</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; current = current + 1;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return current;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; };</div><div>&nbsp; &nbsp;&nbsp;</div><div>}());</div><div><br /></div><div>console.log(Sequence.getNextValue()); // 1</div><div>console.log(Sequence.getNextValue()); // 2</div><div>console.log(Sequence.getCurrentValue()); // 2</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "pUc!wAGw{s", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at undgå parenter ved IFFE?", 
+                "Ja, hvis der står noget foran funktionen.<div><br /></div><div><div>var result = function() {</div><div>&nbsp; &nbsp; return \"From IIFE!\";</div><div>}();</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "syf9~L`/Ub", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Når et objekt kaldes med . hvad referer this til?", 
+                "this referer til det objekt, der er lige før ."
+            ], 
+            "flags": 0, 
+            "guid": "K.@vbjW~~z", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad referer this til når en konstruktør funktion bruges?", 
+                "this referer til den specifikke instance af objektet, som er lavet og returnes med konstruktør funktionen."
+            ], 
+            "flags": 0, 
+            "guid": "d],?W|PJwn", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvilket keyword bruges til at slette en property i et objekt?", 
+                "Delete."
+            ], 
+            "flags": 0, 
+            "guid": "f<aC*)y;:O", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Er det muligt at teste om et objekt har en bestemt property?", 
+                "ja, ved hjælp at hasOwnProperty()."
+            ], 
+            "flags": 0, 
+            "guid": "f_MtHa0sIq", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Når vi bruger en konstruktør i javascript, hvilket keyword kan vi bruge til at lave en ny instance af objektet?", 
+                "new."
+            ], 
+            "flags": 0, 
+            "guid": "rWJ&65<9H4", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad bruges this til når vi har lavet en konstruktør?", 
+                "Vi bruger this til at tildele værdier til objektets properties baseret på de værdier, der blev passed til funktionen."
+            ], 
+            "flags": 0, 
+            "guid": "x&wP>2^;x|", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad bruges join metoden til?", 
+                "join metoden bruges til at sammensætte en string af alle elementerne fra et array."
+            ], 
+            "flags": 0, 
+            "guid": "M08K3bxSy*", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad gør reduce metoden?", 
+                "reduce metoden tilfører en funktion mod en akkumulator, og hver element i arrayet(fra venstre til højre) reduceres til en enkel værdi.<div><br /></div><div>Eks.</div><div><br /></div><div><div>let numbers = [2, 3, 67, 33];</div><div><br /></div><div>function getSum(total, num) { //Retur værdien gemmes i en akkumulator som her er total</div><div>&nbsp; &nbsp; return total + num;</div><div>};</div></div>"
+            ], 
+            "flags": 0, 
+            "guid": "fhz3.rDG.2", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Nævn 2 eksempler som reduce metoden kan bruges til?", 
+                "Lægge alle tal sammen i et array.<div>Tælle antallet af de samme elementer i et array.</div>"
+            ], 
+            "flags": 0, 
+            "guid": "dKy;{ra`$Z", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er en callback(Den enkle forklaring)?", 
+                "En callback er en funktion, som bliver udført når(efter) en anden funktion er færdig - derfor navnet call back."
+            ], 
+            "flags": 0, 
+            "guid": "RjcOW9^e[d", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "Hvad er en callback(den komplekse forklaring)?", 
+                "<div>I javascript er funktioner objekter.&nbsp;</div><div>Derfor kan funktioner tage funktioner som argumenter,&nbsp;</div><div>og kan blive returneret af andre funktioner.&nbsp;</div><div>Funktioner, der gør det kaldes higher-order functions.&nbsp;</div><div>Alle funktioner, der bliver passed som et argument bliver kaldt callback funktioner.</div><div><br /></div>"
+            ], 
+            "flags": 0, 
+            "guid": "caY$/$E5H=", 
+            "note_model_uuid": "5d8b7104-664b-11e8-9224-f0038c751458", 
+            "tags": [
+                "js"
+            ]
+        }
+    ]
+}
